@@ -36,6 +36,30 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "c528654c-11c8-4f1d-ba83-944c0e6cae72",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ChannelIncrease",
+                    "type": "Button",
+                    "id": "96550b89-53a1-42d0-b231-86ffa2d3a75b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "DecreaseChannel",
+                    "type": "Button",
+                    "id": "5eb5bceb-29fb-4903-9be8-54f3817b3479",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
                 }
             ],
             "bindings": [
@@ -124,6 +148,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "WeaponChange",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b67dd54d-a1c7-4827-af15-6d9a7af4052b",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d851a5f3-291e-450f-8eb0-d2d3a62e9813",
+                    "path": "<Keyboard>/numpadPlus",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChannelIncrease",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "861a8f2b-5d20-453f-badb-951b788576a7",
+                    "path": "<Keyboard>/numpadMinus",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DecreaseChannel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -32,7 +32,7 @@ public class PlayerVisionController : MonoBehaviour
     /// </summary>
     private void RotatePlayer()
     {
-        mouseLook = playerInputInstance.GetAndReturnPlayerLookAroundInput();//connect mouse input with variable
+        mouseLook = playerInputInstance.GetPlayerLookAroundInput();//connect mouse input with variable
 
         float mouseX = mouseLook.x * mouseSensitivity * Time.deltaTime;//get mouse x rotation
 

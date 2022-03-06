@@ -41,10 +41,12 @@ public class Controller : MonoBehaviour
     {
         transform.rotation = Quaternion.Euler(new Vector3(0, transform.eulerAngles.y + look.ReadValue<Vector2>().x * sensitivity * Time.deltaTime, 0));
         camera.localRotation = Quaternion.Euler(new Vector3(camera.localEulerAngles.x - look.ReadValue<Vector2>().y * sensitivity * Time.deltaTime, 0, 0));
+
+        rb.velocity = (transform.right * move.ReadValue<Vector2>().x + transform.forward * move.ReadValue<Vector2>().y) * speed;
     }
 
     private void FixedUpdate()
     {
-        rb.MovePosition(transform.position + (transform.right * move.ReadValue<Vector2>().x + transform.forward * move.ReadValue<Vector2>().y) * speed * Time.deltaTime);
+        //rb.MovePosition(transform.position + (transform.right * move.ReadValue<Vector2>().x + transform.forward * move.ReadValue<Vector2>().y) * speed * Time.deltaTime);
     }
 }

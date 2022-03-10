@@ -11,18 +11,21 @@ public class TVRemoteController : WeaponTypes
 
     private void Start()
     {
-        InputFromPlayer.Instance.GetChannelDecreasedChangeValue(IncreaseCurrentChannelValue);
+        InputFromPlayer.Instance.GetChannelIncreasedChangeValue(IncreaseCurrentChannelValue);
         InputFromPlayer.Instance.GetChannelDecreasedChangeValue(DecreaseCurrentChannelValue);
     }
 
     void IncreaseCurrentChannelValue()
     {
         _currentChannel++;
+        Mathf.Clamp(_currentChannel, 0, 3);
         print(_currentChannel);
     }
     void DecreaseCurrentChannelValue()
     {
         _currentChannel--;
+        Mathf.Clamp(_currentChannel, 0, 3);
+        print(_currentChannel);
     }
     protected override void RemoteController()
     {

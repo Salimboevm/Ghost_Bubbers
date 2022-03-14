@@ -49,6 +49,30 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""c528654c-11c8-4f1d-ba83-944c0e6cae72"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ChannelIncrease"",
+                    ""type"": ""Button"",
+                    ""id"": ""96550b89-53a1-42d0-b231-86ffa2d3a75b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""DecreaseChannel"",
+                    ""type"": ""Button"",
+                    ""id"": ""5eb5bceb-29fb-4903-9be8-54f3817b3479"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -139,6 +163,39 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
                     ""action"": ""WeaponChange"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b67dd54d-a1c7-4827-af15-6d9a7af4052b"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d851a5f3-291e-450f-8eb0-d2d3a62e9813"",
+                    ""path"": ""<Keyboard>/numpadPlus"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChannelIncrease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""861a8f2b-5d20-453f-badb-951b788576a7"",
+                    ""path"": ""<Keyboard>/numpadMinus"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DecreaseChannel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -151,6 +208,9 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_WeaponChange = m_Player.FindAction("WeaponChange", throwIfNotFound: true);
+        m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
+        m_Player_ChannelIncrease = m_Player.FindAction("ChannelIncrease", throwIfNotFound: true);
+        m_Player_DecreaseChannel = m_Player.FindAction("DecreaseChannel", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -204,6 +264,9 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_WeaponChange;
+    private readonly InputAction m_Player_Shoot;
+    private readonly InputAction m_Player_ChannelIncrease;
+    private readonly InputAction m_Player_DecreaseChannel;
     public struct PlayerActions
     {
         private @CharacterInputMaster m_Wrapper;
@@ -212,6 +275,9 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
         public InputAction @Look => m_Wrapper.m_Player_Look;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputAction @WeaponChange => m_Wrapper.m_Player_WeaponChange;
+        public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
+        public InputAction @ChannelIncrease => m_Wrapper.m_Player_ChannelIncrease;
+        public InputAction @DecreaseChannel => m_Wrapper.m_Player_DecreaseChannel;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -233,6 +299,15 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
                 @WeaponChange.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWeaponChange;
                 @WeaponChange.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWeaponChange;
                 @WeaponChange.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWeaponChange;
+                @Shoot.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
+                @Shoot.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
+                @Shoot.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
+                @ChannelIncrease.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChannelIncrease;
+                @ChannelIncrease.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChannelIncrease;
+                @ChannelIncrease.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChannelIncrease;
+                @DecreaseChannel.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDecreaseChannel;
+                @DecreaseChannel.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDecreaseChannel;
+                @DecreaseChannel.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDecreaseChannel;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -249,6 +324,15 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
                 @WeaponChange.started += instance.OnWeaponChange;
                 @WeaponChange.performed += instance.OnWeaponChange;
                 @WeaponChange.canceled += instance.OnWeaponChange;
+                @Shoot.started += instance.OnShoot;
+                @Shoot.performed += instance.OnShoot;
+                @Shoot.canceled += instance.OnShoot;
+                @ChannelIncrease.started += instance.OnChannelIncrease;
+                @ChannelIncrease.performed += instance.OnChannelIncrease;
+                @ChannelIncrease.canceled += instance.OnChannelIncrease;
+                @DecreaseChannel.started += instance.OnDecreaseChannel;
+                @DecreaseChannel.performed += instance.OnDecreaseChannel;
+                @DecreaseChannel.canceled += instance.OnDecreaseChannel;
             }
         }
     }
@@ -259,5 +343,8 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
         void OnLook(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnWeaponChange(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
+        void OnChannelIncrease(InputAction.CallbackContext context);
+        void OnDecreaseChannel(InputAction.CallbackContext context);
     }
 }

@@ -1,62 +1,79 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
+using System;
 using UnityEngine;
 
 public class InputFromPlayer : MonoBehaviour
 {
-    private static InputFromPlayer instance;
-
     public static InputFromPlayer Instance
     {
         get
         {
-            return instance;
+            return _instance;
         }
     }
-    private void Awake()
-    {
-        instance = this;
-        inputMasterFromPlayer = new CharacterInputMaster();
-    }
-    private CharacterInputMaster inputMasterFromPlayer;
-    private Vector2 moveInput;
-    private Vector2 lookAroundInput;
-    private Vector2 scrollWheelWhileToSwitchWeapons;
-    KeyCode interactButtonPressed;
+
+    public Action _startShooting;
+    public Action _stopShooting;
+
+    private static InputFromPlayer _instance;
+    private CharacterInputMaster _inputMasterFromPlayer;
+    private Vector2 _moveInput;
+    private Vector2 _lookAroundInput;
+    private Vector2 _screenPoint;
+    private Vector2 _scrollWheelWhileToSwitchWeapons;
+    KeyCode _interactButtonPressed;
     public CharacterInputMaster InputMasterFromPlayer
     {
         get
         {
-            return inputMasterFromPlayer;
+            return _inputMasterFromPlayer;
         }
     }
+    private void Awake()
+    {
+        _instance = this;
+        _inputMasterFromPlayer = new CharacterInputMaster();
+    }
   
-    public Vector2 GetAndReturnPlayerMoveInput()
+    public Vector2 GetPlayerMoveInput()
     {
-        moveInput = inputMasterFromPlayer.Player.Movement.ReadValue<Vector2>();
-        return moveInput;
+        _moveInput = _inputMasterFromPlayer.Player.Movement.ReadValue<Vector2>();
+        return _moveInput;
     }
-    public Vector2 GetAndReturnPlayerLookAroundInput()
+    public Vector2 GetPlayerLookAroundInput()
     {
-        lookAroundInput = inputMasterFromPlayer.Player.Look.ReadValue<Vector2>();
-        return lookAroundInput;
+        _lookAroundInput = _inputMasterFromPlayer.Player.Look.ReadValue<Vector2>();
+        return _lookAroundInput;
     }
-    public Vector2 GetAndReturnScrollWheelValue()
+    public Vector2 GetScrollWheelValue()
     {
-        scrollWheelWhileToSwitchWeapons = inputMasterFromPlayer.Player.WeaponChange.ReadValue<Vector2>();
-        return scrollWheelWhileToSwitchWeapons;
+        _scrollWheelWhileToSwitchWeapons = _inputMasterFromPlayer.Player.WeaponChange.ReadValue<Vector2>();
+        return _scrollWheelWhileToSwitchWeapons;
     }
-    public void GetInteractionButtonPressed(System.Action action)
+    public void GetChannelIncreasedChangeValue(Action action)
     {
-        inputMasterFromPlayer.Player.Interact.performed += _ => action.Invoke();
+        _inputMasterFromPlayer.Player.ChannelIncrease.performed += _=>action?.Invoke();
+    }
+    public void GetChannelDecreasedChangeValue(Action action)
+    {
+        _inputMasterFromPlayer.Player.DecreaseChannel.performed += _=>action?.Invoke();
+    }
+    public void GetInteractionButtonPressed(Action action)
+    {
+        _inputMasterFromPlayer.Player.Interact.performed += _ => action?.Invoke();
+    }
+    public void GetShootButtonStarted(Action action)
+    {
+        _inputMasterFromPlayer.Player.Shoot.performed += act => action?.Invoke();
     }
     private void OnEnable()
     {
-        inputMasterFromPlayer.Enable();
+        _inputMasterFromPlayer.Enable();
     }
     private void OnDisable()
     {
-        inputMasterFromPlayer.Disable();
+        _inputMasterFromPlayer.Disable();
     }
 }

@@ -29,7 +29,7 @@ public class PlayerMovementController : MonoBehaviour
 
     private void PlayerMovement()
     {
-        move = playerInputInstance.GetAndReturnPlayerMoveInput();
+        move = playerInputInstance.GetPlayerMoveInput();
         Vector3 movement = (move.y * transform.forward) + (move.x * transform.right);
         characterController.Move(movement * moveSpeed);
     }

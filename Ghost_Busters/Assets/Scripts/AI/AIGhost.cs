@@ -1,16 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-[System.Serializable]
 public class AIGhost : MonoBehaviour
 {
-    [SerializeField] int _id = 0;
+
+
+    private int _id = 0;
+
+    private NavMeshAgent _agent;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        _agent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame

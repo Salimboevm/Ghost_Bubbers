@@ -5,9 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class PossessableObject
 {
-    [SerializeField] GameObject _object;
+    public GameObject _object;
     public int _objectID = -1;
     public bool _possessed = false;
-    //public bool _puzzleSolved = false;
+    public bool _puzzleSolved = false;
     public int _ghostID = -1;
 }

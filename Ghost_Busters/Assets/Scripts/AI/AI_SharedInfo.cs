@@ -14,6 +14,16 @@ public class AI_SharedInfo : MonoBehaviour
     //private List<AIGhost> _capturedGhosts; 
     #endregion
 
+    public static AI_SharedInfo _instance;
+
+    private void Awake()
+    {
+        if( _instance == null )
+            _instance = this;
+        else
+            Destroy(this);
+    }
+
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +56,20 @@ public class AI_SharedInfo : MonoBehaviour
         #endregion
     }
 
+    #region testing
+    private void Update()
+    {
+        if (_possessedObjects.Count > 0)
+        {
+            foreach (PossessableObject pObj in _possessedObjects)
+            {
+                if (pObj._puzzleSolved)
+                    AI_EventsManager._instance.ObjectCleared(pObj._objectID);
+            } 
+        }
+    }
+    #endregion
+
     private void OnEnable()
     {
         AI_EventsManager.OnPossessed += ObjectPossessed;
@@ -70,11 +94,19 @@ public class AI_SharedInfo : MonoBehaviour
 
     private void ObjectCleared(int objectID)
     {
+        _possessedObjects.Remove(_objects[objectID]);
         PossessableObject possessedObject = _objects[objectID];
         possessedObject._possessed = false;
         //possessedObject._puzzleSolved = true;
-        possessedObject._ghostID = -1;
 
-        _possessedObjects.Remove(_objects[objectID]);
+        #region Ghost Re-emerging
+        GameObject ghost = _ghosts[possessedObject._ghostID].gameObject;
+        ghost.transform.position = possessedObject._object.transform.position;
+        ghost.SetActive(true); 
+        #endregion
+
+        possessedObject._ghostID = -1;
     }
+
+    public List<PossessableObject> GetFreeObjects() { return _freeObjects; }
 }

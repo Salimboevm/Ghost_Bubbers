@@ -204,8 +204,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.9000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1321208254}
+  m_Children: []
   m_Father: {fileID: 550093093}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -508,6 +507,7 @@ Transform:
   - {fileID: 140905690}
   - {fileID: 1637206362}
   - {fileID: 871614019}
+  - {fileID: 1321208254}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -790,15 +790,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321208253}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.9000001, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1819742147}
   - {fileID: 8221790536729857653}
   - {fileID: 8455860236323381913}
   - {fileID: 6593679278829708568}
-  m_Father: {fileID: 140905690}
-  m_RootOrder: 0
+  m_Father: {fileID: 550093093}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1637206361
 GameObject:
@@ -873,6 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3911cf174572bda448813dc1f588f943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponController: {fileID: 550093097}
 --- !u!4 &6593679278829708568
 Transform:
   m_ObjectHideFlags: 0
@@ -984,6 +985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14394dc7aacc4594bab395a8d10e7dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponController: {fileID: 550093097}
   _distance: 999999
   _playerCamera: {fileID: 140905689}
   _layerMask:

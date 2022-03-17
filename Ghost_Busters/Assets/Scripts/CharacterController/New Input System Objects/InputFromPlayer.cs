@@ -64,6 +64,10 @@ public class InputFromPlayer : MonoBehaviour
     {
         _inputMasterFromPlayer.Player.Interact.performed += _ => action?.Invoke();
     }
+    public void GetUseGlassesButtonPressed(Action action)
+    {
+        _inputMasterFromPlayer.Player.Interact.performed += _ => action?.Invoke();
+    }
     public void GetShootButtonStarted(Action action)
     {
         _inputMasterFromPlayer.Player.Shoot.performed += act => action?.Invoke();

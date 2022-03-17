@@ -28,7 +28,8 @@ public class GhostShooter : WeaponTypes
     
     protected override void ShootGhost()
     {
-        //if (_numberOfBulletsLeft.Equals(0)) return;
+        if (weaponController.WeaponTypes != WeaponTypesEnum.rifle) return;
+        if (_numberOfBulletsLeft.Equals(0)) return;
         OnShoot();
     }
     Vector3 GetRaycastHitDirection()

@@ -14,6 +14,7 @@ public class AIGhost : MonoBehaviour
 
     AI_SharedInfo _sharedInfo;
     private PossessableObject _currentTarget;
+    bool _initalTargetFound = false;
 
     private int _id = 0;
 
@@ -24,10 +25,11 @@ public class AIGhost : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
-        _agent = GetComponent<NavMeshAgent>();
         _sharedInfo = AI_SharedInfo._instance;
+        _agent = GetComponent<NavMeshAgent>();
+        _state = State.RunAround;
     }
 
     // Update is called once per frame
@@ -36,11 +38,23 @@ public class AIGhost : MonoBehaviour
         switch (_state)
         {
             case State.ChoosingDestination:
-                int objectID = FindClosestPosObj();
-                _currentTarget = _sharedInfo.GetFreeObjects()[objectID];
-                _navigationTarget = _currentTarget._object.transform;
+                if (_sharedInfo.GetFreeObjects().Count > 0)
+                {
+                    int objectID = FindClosestPosObj();
+                    if (objectID != -1)
+                    {
+                        _currentTarget = _sharedInfo.GetAllObjects()[objectID];
+                        _sharedInfo.GetFreeObjects().Remove(_currentTarget);
+                        _sharedInfo.GetTargetedObjects().Add(_currentTarget);
+                        _navigationTarget = _currentTarget._object.transform;
 
-                _state = State.GoingToDestination;
+                        _state = State.GoingToDestination;
+                    }
+                    else
+                        _state = State.RunAround;
+                }
+                else
+                    _state = State.RunAround;
                 break;
 
             case State.GoingToDestination:
@@ -57,37 +71,94 @@ public class AIGhost : MonoBehaviour
                     {
                         AI_EventsManager._instance.ObjectPossessed(_currentTarget._objectID, _id);
                         _currentTarget = null;
-                        gameObject.SetActive(false); 
                     }
                 }
 
                 break;
             case State.RunAround:
+                if(/*!_initalTargetFound ||*/ _sharedInfo.GetFreeObjects().Count < 1)
+                {
+
+                }
+                else
+                {
+                    _state = State.ChoosingDestination;
+                }
                 break;
         }
     }
 
     private int FindClosestPosObj()
     {
-        List<PossessableObject> possessableObjects = new List<PossessableObject>();
-        possessableObjects = _sharedInfo.GetFreeObjects();
+        List<PossessableObject> freeObjects = _sharedInfo.GetFreeObjects();
+        AIGhost[] ghosts = _sharedInfo.GetGhostList();
 
         int closestObject = -1;
-        float smallestDistance = 20000f;
-        for (int i = 0; i < possessableObjects.Count; i++)
-        {
-            float tempDist = Vector3.Distance(transform.position, possessableObjects[i]._object.transform.position);
 
-            if (tempDist < smallestDistance)
+        if (freeObjects.Count > 0)
+        {
+
+            float smallestDistance = 20000f;
+            float successfullSmallDist = 0f;
+
+            for (int i = 0; i < freeObjects.Count; i++)
             {
-                smallestDistance = tempDist;
-                closestObject = possessableObjects[i]._objectID;
+                float tempDist = Vector3.Distance(transform.position, freeObjects[i]._object.transform.position);
+
+                if (tempDist < smallestDistance)
+                {
+                    smallestDistance = tempDist;
+
+                    bool isTargeted = false;
+                    foreach (AIGhost ghost in ghosts)
+                    {
+                        if (ghost != this)
+                        {
+                            if (ghost.GetCurrentTarget() != null)
+                            {
+                                if (freeObjects[i]._objectID == ghost.GetCurrentTarget()._objectID)
+                                {
+                                    isTargeted = true;
+                                    break; 
+                                }
+                            }
+                        }
+                    }
+
+                    if (!isTargeted)
+                    {
+                        closestObject = freeObjects[i]._objectID;
+                        successfullSmallDist = smallestDistance;
+                        //Debug.Log("A target for the Ghost with the ID: " + _id + " was found, it is the object with the ID: " + freeObjects[i]._objectID);
+                    }
+                    else
+                    {
+                        smallestDistance = successfullSmallDist;
+                        //Debug.LogWarning("A target for the Ghost with the ID: " + _id + " was not found, reseting smallest distance to 20000f");
+                    }
+                }
+            }
+
+            if (closestObject != -1)
+            {
+                return closestObject;
+            }
+            else
+            {
+                _state = State.RunAround;
+                //Debug.LogWarning("No free object was found for Ghost with the ID: " + _id + ", which wasn't already targeted by another ghost!");
+                return -1;
             }
         }
-        Debug.Log(closestObject);
-        return closestObject;
+        else
+        {
+            _state = State.RunAround;
+            //Debug.LogWarning("There are no longer any Free Objects left for Ghost with the ID: " + _id);
+            return -1;
+        }
     }
 
     public int GetID() { return _id; }
     public void SetID(int id) { _id = id; }
+    public PossessableObject GetCurrentTarget() { return _currentTarget; }
 }

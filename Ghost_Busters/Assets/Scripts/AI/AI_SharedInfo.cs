@@ -6,6 +6,7 @@ public class AI_SharedInfo : MonoBehaviour
 {
     [SerializeField] private PossessableObject[] _objects;
     private List<PossessableObject> _freeObjects;
+    private List<PossessableObject> _targetedObjects;
     private List<PossessableObject> _possessedObjects;
 
     [SerializeField] private AIGhost[] _ghosts;
@@ -18,26 +19,16 @@ public class AI_SharedInfo : MonoBehaviour
 
     private void Awake()
     {
-        if( _instance == null )
+        if (_instance == null)
             _instance = this;
         else
             Destroy(this);
-    }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        _possessedObjects = new List<PossessableObject>();
         _freeObjects = new List<PossessableObject>();
-
-        #region Unused
-        //_freeGhosts = new List<AIGhost>();
-        //_capturedGhosts = new List<AIGhost>(); 
-        #endregion
+        _targetedObjects = new List<PossessableObject>();
+        _possessedObjects = new List<PossessableObject>();
 
         int i = 0;
-
         foreach (PossessableObject pObj in _objects)
         {
             pObj._objectID = i;
@@ -45,7 +36,30 @@ public class AI_SharedInfo : MonoBehaviour
             _freeObjects.Add(pObj);
         }
 
+        i = 0;
+        foreach (AIGhost ghost in _ghosts)
+        {
+            ghost.SetID(i);
+            i++;
+        }
+    }
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        //int i = 0;
+        //foreach (AIGhost ghost in _ghosts)
+        //{
+        //    ghost.SetID(i);
+        //    i++;
+        //    ghost.InitalFindClosPosObj();
+        //}
+
         #region Unused
+        //_freeGhosts = new List<AIGhost>();
+        //_capturedGhosts = new List<AIGhost>(); 
+
         //i = 0;
         //foreach (AIGhost ghost in _ghosts)
         //{
@@ -59,14 +73,16 @@ public class AI_SharedInfo : MonoBehaviour
     #region testing
     private void Update()
     {
+        #region Testing PuzzleSolved Script
         if (_possessedObjects.Count > 0)
         {
             foreach (PossessableObject pObj in _possessedObjects)
             {
                 if (pObj._puzzleSolved)
                     AI_EventsManager._instance.ObjectCleared(pObj._objectID);
-            } 
-        }
+            }
+        } 
+        #endregion
     }
     #endregion
 
@@ -88,8 +104,10 @@ public class AI_SharedInfo : MonoBehaviour
         possessedObject._possessed = true;
         possessedObject._ghostID = ghostID;
 
-        _freeObjects.Remove(_objects[objectID]);
+        _targetedObjects.Remove(_objects[objectID]);
         _possessedObjects.Add(_objects[objectID]);
+
+        _ghosts[ghostID].gameObject.SetActive(false);
     }
 
     private void ObjectCleared(int objectID)
@@ -109,4 +127,7 @@ public class AI_SharedInfo : MonoBehaviour
     }
 
     public List<PossessableObject> GetFreeObjects() { return _freeObjects; }
+    public List<PossessableObject> GetTargetedObjects() { return _targetedObjects; }
+    public PossessableObject[] GetAllObjects() { return _objects; }
+    public AIGhost[] GetGhostList() { return _ghosts; }
 }

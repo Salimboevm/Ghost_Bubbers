@@ -9,7 +9,7 @@ public class TempDirectionCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_ghost.GetAgent().destination != null)
+        if(_ghost != null && _ghost.isActiveAndEnabled && _ghost.GetAgent().destination != null)
             transform.position = _ghost.GetAgent().destination;
     }
 }

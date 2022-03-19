@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AI_SharedInfo : MonoBehaviour
 {
+    [SerializeField] private GameObject _playerGO;
+
     [SerializeField] private PossessableObject[] _objects;
     private List<PossessableObject> _freeObjects;
     private List<PossessableObject> _targetedObjects;
@@ -45,17 +47,8 @@ public class AI_SharedInfo : MonoBehaviour
     }
 
 
-    // Start is called before the first frame update
     void Start()
     {
-        //int i = 0;
-        //foreach (AIGhost ghost in _ghosts)
-        //{
-        //    ghost.SetID(i);
-        //    i++;
-        //    ghost.InitalFindClosPosObj();
-        //}
-
         #region Unused
         //_freeGhosts = new List<AIGhost>();
         //_capturedGhosts = new List<AIGhost>(); 
@@ -130,4 +123,5 @@ public class AI_SharedInfo : MonoBehaviour
     public List<PossessableObject> GetTargetedObjects() { return _targetedObjects; }
     public PossessableObject[] GetAllObjects() { return _objects; }
     public AIGhost[] GetGhostList() { return _ghosts; }
+    public GameObject GetPlayerGO() { return _playerGO; }
 }

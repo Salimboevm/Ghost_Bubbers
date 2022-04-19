@@ -121,6 +121,7 @@ public class AI_SharedInfo : MonoBehaviour
 
     public List<PossessableObject> GetFreeObjects() { return _freeObjects; }
     public List<PossessableObject> GetTargetedObjects() { return _targetedObjects; }
+    public List<PossessableObject> GetPossessedObjects() { return _possessedObjects; }
     public PossessableObject[] GetAllObjects() { return _objects; }
     public AIGhost[] GetGhostList() { return _ghosts; }
     public GameObject GetPlayerGO() { return _playerGO; }

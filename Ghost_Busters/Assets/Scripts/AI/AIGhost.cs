@@ -110,7 +110,7 @@ public class AIGhost : MonoBehaviour
                         //} 
                         #endregion
 
-                        #region Wall avoidance - need to have at least invisible walls too
+                        #region Wall avoidance - need to have at least invisible walls to work
                         bool isDirSafe = false;
 
                         //We will need to rotate the direction away from the player if straight to the opposite of the player is a wall

@@ -35,6 +35,7 @@ public class Controller : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()

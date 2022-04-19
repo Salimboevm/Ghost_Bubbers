@@ -21,12 +21,13 @@ public class PlayerWeaponController : MonoBehaviour
     [SerializeField]
     WeaponTypesEnum weaponTypes;
 
-   
+    internal WeaponTypesEnum WeaponTypes { get => weaponTypes;private set => weaponTypes = value; }
+
     private void Start()
     {
         playerInputInstance = InputFromPlayer.Instance;
         currentWeapon = weapons[weaponNumber];
-        weaponTypes = (WeaponTypesEnum)weaponNumber;
+        WeaponTypes = (WeaponTypesEnum)weaponNumber;
 
     }
     private void Update()
@@ -40,7 +41,7 @@ public class PlayerWeaponController : MonoBehaviour
         CheckAndCalculateWeaponNumber();//calculate weapon number
         currentWeapon = weapons[weaponNumber];//change current weapon
         currentWeapon.SetActive(true);//activate current weapon
-        weaponTypes = (WeaponTypesEnum)weaponNumber;//change weapon type
+        WeaponTypes = (WeaponTypesEnum)weaponNumber;//change weapon type
     }
     void CheckAndCalculateWeaponNumber()
     {
@@ -71,19 +72,19 @@ public class PlayerWeaponController : MonoBehaviour
     }
     bool ReturnRifleWeaponType()
     {
-        if (weaponTypes == WeaponTypesEnum.rifle)
+        if (WeaponTypes == WeaponTypesEnum.rifle)
             return true;
         return false;
     }
     bool ReturnVacuumWeaponType()
     {
-        if (weaponTypes == WeaponTypesEnum.vacuum)
+        if (WeaponTypes == WeaponTypesEnum.vacuum)
             return true;
         return false;
     }
     bool ReturnTrapWeaponType()
     {
-        if (weaponTypes == WeaponTypesEnum.trap)
+        if (WeaponTypes == WeaponTypesEnum.trap)
             return true;
         return false;
     }

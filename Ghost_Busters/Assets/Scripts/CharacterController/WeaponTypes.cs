@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class WeaponTypes : WeaponFunctionsController
 {
-
+    [SerializeField]
+    protected PlayerWeaponController weaponController;
     protected override void RayGlassesToFindGhost()
     {
         throw new System.NotImplementedException();

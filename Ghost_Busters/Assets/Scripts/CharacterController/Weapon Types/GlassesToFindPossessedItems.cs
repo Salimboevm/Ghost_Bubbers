@@ -6,7 +6,7 @@ public class GlassesToFindPossessedItems : WeaponTypes
 {
     //is player wearing glasses 
     private bool _isPlayerWearingGlasses;
-
+    public PossessableObject[] _possesedoBJECTS;
     private void Start()
     {
         InputFromPlayer.Instance.GetUseGlassesButtonPressed(RayGlassesToFindGhost);
@@ -14,11 +14,13 @@ public class GlassesToFindPossessedItems : WeaponTypes
     protected override void RayGlassesToFindGhost()
     {
         _isPlayerWearingGlasses = true;
+        ChangeColorOfPosessedObjects(_possesedoBJECTS);
     }
-    private void ShowPossessedItems(bool value)
+    private void ChangeColorOfPosessedObjects(PossessableObject[] possessedObjects)
     {
-        value = true;
-        //change material color
-        
+        for (int i = 0; i < possessedObjects.Length; i++)
+        {
+            possessedObjects[i]._object.GetComponent<MeshRenderer>().material.color = Color.red;
+        }
     }
 }

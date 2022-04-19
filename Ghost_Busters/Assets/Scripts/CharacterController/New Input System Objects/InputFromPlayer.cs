@@ -66,7 +66,7 @@ public class InputFromPlayer : MonoBehaviour
     }
     public void GetUseGlassesButtonPressed(Action action)
     {
-        _inputMasterFromPlayer.Player.Interact.performed += _ => action?.Invoke();
+        _inputMasterFromPlayer.Player.UseGlasses.performed += _ => action?.Invoke();
     }
     public void GetShootButtonStarted(Action action)
     {

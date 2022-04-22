@@ -8,7 +8,7 @@ public class TVRemoteController : WeaponTypes
     System.Random _systemRandomNumberGenerator = new System.Random();
     private const int MAX_NUMBER_OF_CHANNELS = 4;
     [SerializeField]
-    private VideoClip _newPlayingClip;
+    private VideoClip[] _newPlayingClip;
     [SerializeField]
     private VideoPlayer _tvVideoPlayer;
     private uint _onWhichChannelGhostHided = 0;
@@ -35,7 +35,7 @@ public class TVRemoteController : WeaponTypes
     }
     protected override void RemoteController()
     {
-        ChangePlayingVideo(_newPlayingClip);
+        ChangePlayingVideo(_newPlayingClip[_currentChannel]);
         
     }
     private void HideGhostInTV()

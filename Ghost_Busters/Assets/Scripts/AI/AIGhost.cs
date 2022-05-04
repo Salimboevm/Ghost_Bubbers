@@ -182,7 +182,7 @@ public class AIGhost : MonoBehaviour
                     {
                         if (!_idleWalking)
                         {
-                            _agent.SetDestination(RandomNavmeshLocation(5f));
+                            _agent.SetDestination(RandomNavmeshLocation(5f, transform));
                             _idleWalking = true;
                         }
                         if(Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(_agent.destination.x, 0, _agent.destination.z)) < (_agent.stoppingDistance + 0.5f))
@@ -289,7 +289,12 @@ public class AIGhost : MonoBehaviour
     } 
     #endregion
 
-    public Vector3 RandomNavmeshLocation(float radius)
+    /// <summary>
+    /// Finds a random point, located on the NavMesh in a given radius from given center
+    /// </summary>
+    /// <param name="radius"></param>
+    /// <returns></returns>
+    public Vector3 RandomNavmeshLocation(float radius, Transform center)
     {
         bool pointFound = false;
         Vector3 finalPosition = Vector3.zero;
@@ -297,13 +302,16 @@ public class AIGhost : MonoBehaviour
         do
         {
             Vector3 randomDirection = Random.insideUnitSphere * radius;
-            randomDirection += transform.position;
+            randomDirection += center.position;
+
             NavMeshHit hit;
+
             if (NavMesh.SamplePosition(randomDirection, out hit, 3f, NavMesh.AllAreas))
             {
                 finalPosition = hit.position;
                 pointFound = true;
             }
+
         } while (!pointFound);
 
         return finalPosition;
@@ -320,35 +328,47 @@ public class AIGhost : MonoBehaviour
     /// <returns></returns>
     private static Vector3 AvoidObject(GameObject avoider, GameObject toAvoid, Transform targetDestination, float radius, float runDistance)
     {
-        // Direction from the center (Most likely, Player) to the avoidee (some AI)
-        Vector3 dirFromCenToAvo = avoider.transform.position - toAvoid.transform.position;
-        // Direction from avoidee to the target Destination
-        Vector3 dirFromAvoToTarget = targetDestination.position - avoider.transform.position;
+        #region Directions
+        Vector3 directionFromTheToAvoidObjectToTheAvoidee = avoider.transform.position - toAvoid.transform.position;
+        Vector3 directionFromAvoiderToTheTargetDestination = targetDestination.position - avoider.transform.position; 
+        #endregion
+
+        #region PointOnRadius (best direction to run away if not going somewhere
+        // point on the radius in the direction from the ToAvoid to the avoider
+        Vector3 pointOnRadius = toAvoid.transform.position + (directionFromTheToAvoidObjectToTheAvoidee.normalized * radius);
 
 
-        // point on the radius on a line from the center to the avoidee
-        Vector3 pointOnRadius = toAvoid.transform.position + (dirFromCenToAvo.normalized * radius);
+        // Direction from the avoider to this new point on the radius
+        Vector3 dirFromAvoToPoint = pointOnRadius - avoider.transform.position;  
+        #endregion
 
 
-        // Direction from from the avoidee to this new point on the radius
-        Vector3 dirFromAvoToPoint = pointOnRadius - avoider.transform.position;
-
-
+        #region Getting the "Avoidance Point" to run to
         // Adding the two directions FROM the AI to get a vector/point between them
-        Vector3 halfwayVector = dirFromAvoToTarget + dirFromAvoToPoint;
+        Vector3 halfwayVector = directionFromAvoiderToTheTargetDestination + dirFromAvoToPoint;
 
         // Geting our target position on the circle, going from the center to the halfway point, normalising it and then multiplying by radius
-        Vector3 tempTargetPoint = (avoider.transform.position + halfwayVector.normalized * runDistance);
+        Vector3 tempTargetPoint = (avoider.transform.position + halfwayVector.normalized * runDistance); 
+        #endregion
 
-        // If the distance to our actual desination is closer than our new position, 
+
+        #region Distances
         float distanceToTarget = Vector3.Distance(avoider.transform.position, targetDestination.position);
         float distanceToAvoidancePoint = Vector3.Distance(avoider.transform.position, tempTargetPoint);
-        float distanceToAvoidObject = Vector3.Distance(avoider.transform.position, toAvoid.transform.position);
+        float distanceToAvoidObject = Vector3.Distance(avoider.transform.position, toAvoid.transform.position); 
+        #endregion
 
+        #region Returning correct target
+        // If the distance to our actual desination is bigger than the distance to our new "avoidance position"
+        // AND 
+        // The distance to the To Avoid Object is smaller than our distance to the actual target
+        // We return the new point, as it is closer to us
+        // OTHERWISE we return the target, as if it is closer than the enemy AND the Avoidance Point, there's no reason to run away
         if (distanceToTarget + 1f > distanceToAvoidancePoint && distanceToAvoidObject < distanceToTarget)
             return tempTargetPoint;
         else
-            return targetDestination.transform.position;
+            return targetDestination.transform.position; 
+        #endregion
     }
 
     #region Getters and Setters

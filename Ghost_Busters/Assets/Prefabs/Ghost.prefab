@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5216970493130678616}
   - component: {fileID: 5216970493130678617}
   - component: {fileID: 5216970493130678598}
+  - component: {fileID: 1537373102324723489}
   - component: {fileID: 5216970493130678599}
   m_Layer: 0
   m_Name: Ghost
@@ -29,9 +30,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5216970493130678596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.67, y: 3, z: -5.12}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7935536300759808458}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -50,7 +52,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5216970493130678596}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -115,6 +117,63 @@ MonoBehaviour:
   _avoidanceRunAwayDistance: 1.5
   _fleeingDistance: 6
   _possessableDistance: 0.4
+--- !u!114 &1537373102324723489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216970493130678596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c94892013ae7bc43af65ef018bfbcb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sounds:
+  - _name: CatchMe
+    _group: {fileID: 5947359006763750383, guid: 3ec6aa670de59994a98dc6248a755636, type: 2}
+    _clip: {fileID: 8300000, guid: 4b749efd4f5ffc84eba32bfe4669c0ad, type: 3}
+    _volume: 1
+    _pitch: 1
+    _spatialBlend: 1
+    _maxDistance: 20
+    _rolloffMode: 0
+    _source: {fileID: 0}
+    _loop: 0
+    _ignoreAudioListenerPause: 0
+  - _name: GetMe
+    _group: {fileID: 5947359006763750383, guid: 3ec6aa670de59994a98dc6248a755636, type: 2}
+    _clip: {fileID: 8300000, guid: 23447ee7d9b58cb4d8c710a01fe6a18d, type: 3}
+    _volume: 1
+    _pitch: 1
+    _spatialBlend: 1
+    _maxDistance: 20
+    _rolloffMode: 0
+    _source: {fileID: 0}
+    _loop: 0
+    _ignoreAudioListenerPause: 0
+  - _name: Laugh
+    _group: {fileID: 5947359006763750383, guid: 3ec6aa670de59994a98dc6248a755636, type: 2}
+    _clip: {fileID: 8300000, guid: 2bb400f355ce7f94d8efebe549050d8d, type: 3}
+    _volume: 1
+    _pitch: 1
+    _spatialBlend: 1
+    _maxDistance: 20
+    _rolloffMode: 0
+    _source: {fileID: 0}
+    _loop: 0
+    _ignoreAudioListenerPause: 0
+  - _name: Death
+    _group: {fileID: 5947359006763750383, guid: 3ec6aa670de59994a98dc6248a755636, type: 2}
+    _clip: {fileID: 8300000, guid: 9222158bcdd7e5f4db174d2e427e7bee, type: 3}
+    _volume: 1
+    _pitch: 1
+    _spatialBlend: 1
+    _maxDistance: 15
+    _rolloffMode: 0
+    _source: {fileID: 0}
+    _loop: 0
+    _ignoreAudioListenerPause: 0
 --- !u!195 &5216970493130678599
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -137,3 +196,88 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &1786430987783870186
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7308041010178761584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8
+  m_Height: 2.33
+  m_Direction: 1
+  m_Center: {x: -0.023675025, y: 0.083963424, z: 0.0009716749}
+--- !u!1001 &7613908315667176993
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5216970493130678618}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79b91b0b5be748842a649d8a2620387b, type: 2}
+    - target: {fileID: 919132149155446097, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+      propertyPath: m_Name
+      value: Ghost
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+--- !u!1 &7308041010178761584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+  m_PrefabInstance: {fileID: 7613908315667176993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7935536300759808458 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 96bd327bafe9ac84da72b8f70b94d553, type: 3}
+  m_PrefabInstance: {fileID: 7613908315667176993}
+  m_PrefabAsset: {fileID: 0}

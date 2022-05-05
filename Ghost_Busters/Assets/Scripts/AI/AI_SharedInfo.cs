@@ -38,6 +38,13 @@ public class AI_SharedInfo : MonoBehaviour
 
     private void Awake()
     {
+        DifficultySetter dS = DifficultySetter._instance;
+        if(dS != null)
+        {
+            _ammountOfGhosts = dS.GetNumOfGhosts();
+            _numberOfPossesableObjects = dS.GetNumOfGhosts();
+        }
+
         #region Singleton
         if (_instance == null)
             _instance = this;

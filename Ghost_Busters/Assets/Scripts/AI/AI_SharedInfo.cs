@@ -6,23 +6,30 @@ public class AI_SharedInfo : MonoBehaviour
 {
     [SerializeField] private GameObject _playerGO;
 
-    #region Lists
+    #region Objects Lists
     [SerializeField] private GameObject[] _objectsGO; // All potentially possable objects
     [SerializeField] private int _numberOfPossesableObjects = 2; // How many we want to possess
-    private List<PossessableObject> _objects; // Actually possessable objects
+
+    [SerializeField] private List<PossessableObject> _objects; // Actually possessable objects
+
     private List<PossessableObject> _freeObjects; // No longer possessable objects
     private List<PossessableObject> _targetedObjects; // Objects which have a ghost gunning for it
     private List<PossessableObject> _possessedObjects; // Objects with a ghost in them
     #endregion
 
-    [SerializeField] private AIGhost[] _ghosts;
+    #region Ghost Variables
+    [SerializeField] private GameObject _ghostPrefab;
+    [SerializeField] private int _ammountOfGhosts = 3;
+    [SerializeField] private Transform[] _ghostSpawnPositions;
+    [SerializeField] private List<AIGhost> _ghosts; 
+    #endregion
 
     #region Unused
     //private List<AIGhost> _freeGhosts;
     //private List<AIGhost> _capturedGhosts; 
     #endregion
 
-    public static AI_SharedInfo _instance;
+    public static AI_SharedInfo _instance; // Singleton
 
     private void Awake()
     {
@@ -30,9 +37,10 @@ public class AI_SharedInfo : MonoBehaviour
         if (_instance == null)
             _instance = this;
         else
-            Destroy(this); 
+            Destroy(this);
         #endregion
 
+        #region Setting up all lists
         _objects = new List<PossessableObject>();
         _objectsGO = GameObject.FindGameObjectsWithTag("PossessableObject");
 
@@ -40,18 +48,35 @@ public class AI_SharedInfo : MonoBehaviour
         _targetedObjects = new List<PossessableObject>();
         _possessedObjects = new List<PossessableObject>();
 
-        List<int> chosenObjects = new List<int>();
-        if (_numberOfPossesableObjects > _objectsGO.Length)
-            _numberOfPossesableObjects = _objectsGO.Length;
+        _ghosts = new List<AIGhost>(); 
+        #endregion
 
-        for (int m = 0; m < _numberOfPossesableObjects; m++)
+
+        
+    }
+
+    
+
+    void Start()
+    {
+        #region Object Assigning
+        #region Set Up / Control for adding objects
+        List<int> chosenObjects = new List<int>(); // list of idexes for _objectsGO which have already been added
+
+        if (_numberOfPossesableObjects > _objectsGO.Length) //Checks if we set more objects than we actually have, if we did, fix it
+            _numberOfPossesableObjects = _objectsGO.Length;
+        #endregion
+
+        #region Adding random objects from the ObjectGO Array to the objects list (possessable objects)
+        for (int i = 0; i < _numberOfPossesableObjects; i++)
         {
-            int random = -1;
-            if (chosenObjects.Count > 0)
+            int random;
+            do
             {
-                do
+                random = Random.Range(0, _numberOfPossesableObjects);
+
+                if (chosenObjects.Count > 0)
                 {
-                    random = Random.Range(0, _numberOfPossesableObjects);
                     foreach (int y in chosenObjects)
                     {
                         if (y == random)
@@ -60,33 +85,26 @@ public class AI_SharedInfo : MonoBehaviour
                             break;
                         }
                     }
-                } while (random == -1);
-            }
+                }
+            } while (random == -1);
 
-            _objects.Add(_objectsGO[random].GetComponent<PossessableObject>());
+
+            chosenObjects.Add(random);
+            _objects.Add(new PossessableObject { _object = _objectsGO[random], _objectID = i });
         }
+        #endregion
 
-        int i = 0;
+        #endregion
+
+        #region Assigning Free Objects
         foreach (PossessableObject pObj in _objects)
         {
-            pObj._objectID = i;
-            i++;
             _freeObjects.Add(pObj);
         }
-
-        i = 0;
-        foreach (AIGhost ghost in _ghosts)
-        {
-            ghost.SetID(i);
-            i++;
-        }
-
-        
-    }
+        #endregion
 
 
-    void Start()
-    {
+        SpawnGhosts(_ammountOfGhosts);
         #region Unused
         //_freeGhosts = new List<AIGhost>();
         //_capturedGhosts = new List<AIGhost>(); 
@@ -117,6 +135,7 @@ public class AI_SharedInfo : MonoBehaviour
     }
     #endregion
 
+    #region Listening to events
     private void OnEnable()
     {
         AI_EventsManager.OnPossessed += ObjectPossessed;
@@ -128,39 +147,87 @@ public class AI_SharedInfo : MonoBehaviour
         AI_EventsManager.OnPossessed -= ObjectPossessed;
         AI_EventsManager.OnCleared -= ObjectCleared;
     }
+    #endregion
 
+    #region Events
+    /// <summary>
+    ///  Function called on event, when object becomes possessed
+    /// </summary>
+    /// <param name="objectID"></param>
+    /// <param name="ghostID"></param>
     private void ObjectPossessed(int objectID, int ghostID)
     {
+        #region Assigning values
         PossessableObject possessedObject = _objects[objectID];
+
         possessedObject._possessed = true;
         possessedObject._ghostID = ghostID;
+        #endregion
 
+        #region Fixing Lists
         _targetedObjects.Remove(_objects[objectID]);
         _possessedObjects.Add(_objects[objectID]);
+        #endregion
 
-        _ghosts[ghostID].gameObject.SetActive(false);
+        _ghosts[ghostID].gameObject.SetActive(false); // Making ghost "invisible"/in the item
     }
 
+    /// <summary>
+    /// Function activated on event, when object is cleared
+    /// </summary>
+    /// <param name="objectID"></param>
     private void ObjectCleared(int objectID)
     {
+        #region Assigning values
         _possessedObjects.Remove(_objects[objectID]);
+
         PossessableObject possessedObject = _objects[objectID];
         possessedObject._possessed = false;
-        //possessedObject._puzzleSolved = true;
+        //possessedObject._puzzleSolved = true; 
+        #endregion
 
         #region Ghost Re-emerging
         GameObject ghost = _ghosts[possessedObject._ghostID].gameObject;
         ghost.transform.position = possessedObject._object.transform.position;
-        ghost.SetActive(true); 
+        ghost.SetActive(true);
         #endregion
 
+        // Making it known, the object is not possessed by anyone
         possessedObject._ghostID = -1;
+    } 
+    #endregion
+
+    /// <summary>
+    /// Spawns a given number of ghosts and assigns them IDs and them assigns them to the list
+    /// </summary>
+    /// <param name="ammount"></param>
+    public void SpawnGhosts(int ammount)
+    {
+        for (int i = 0; i < ammount; i++)
+        {
+            int randInt = Random.Range(0, _ghostSpawnPositions.Length);
+
+            GameObject ghostGO = Instantiate(_ghostPrefab, _ghostSpawnPositions[randInt].position, _ghostSpawnPositions[randInt].rotation);
+
+            AIGhost ghost = ghostGO.GetComponent<AIGhost>();
+            ghost.SetID(i);
+
+            _ghosts.Add(ghostGO.GetComponent<AIGhost>());
+        }
     }
 
+    public void AssignObjects()
+    {
+
+    }
+
+
+    #region Getters/Setters
     public List<PossessableObject> GetFreeObjects() { return _freeObjects; }
     public List<PossessableObject> GetTargetedObjects() { return _targetedObjects; }
     public List<PossessableObject> GetPossessedObjects() { return _possessedObjects; }
     public List<PossessableObject> GetAllObjects() { return _objects; }
-    public AIGhost[] GetGhostList() { return _ghosts; }
-    public GameObject GetPlayerGO() { return _playerGO; }
+    public List<AIGhost> GetGhostList() { return _ghosts; }
+    public GameObject GetPlayerGO() { return _playerGO; } 
+    #endregion
 }

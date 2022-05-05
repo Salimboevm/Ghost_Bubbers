@@ -28,7 +28,6 @@ public class AIGhost : MonoBehaviour
     private bool _idleWalking = false;
 
     private PossessableObject _currentTarget;
-    bool _initalTargetFound = false;
 
     private int _id = 0;
 
@@ -160,7 +159,6 @@ public class AIGhost : MonoBehaviour
                             {
                                 //If the Raycast to the flee direction doesn't hit a wall then the Enemy is good to go to this direction
                                 _agent.SetDestination(newPos);
-                                isDirSafe = true;
                             }
 
                             //Change the direction of fleeing if it hits a wall by 20 degrees
@@ -201,7 +199,7 @@ public class AIGhost : MonoBehaviour
     private int FindClosestPosObj()
     {
         List<PossessableObject> freeObjects = _sharedInfo.GetFreeObjects();
-        AIGhost[] ghosts = _sharedInfo.GetGhostList();
+        List<AIGhost> ghosts = _sharedInfo.GetGhostList();
 
         int closestObject = -1;
 
@@ -276,8 +274,7 @@ public class AIGhost : MonoBehaviour
     /// <returns></returns>
     private bool SetDestination(Vector3 targetDestination)
     {
-        NavMeshHit hit;
-        if (NavMesh.SamplePosition(targetDestination, out hit, 2.3f, NavMesh.AllAreas))
+        if (NavMesh.SamplePosition(targetDestination, out NavMeshHit hit, 2.3f, NavMesh.AllAreas))
         {
             _agent.SetDestination(hit.position);
             return true;
@@ -304,9 +301,7 @@ public class AIGhost : MonoBehaviour
             Vector3 randomDirection = Random.insideUnitSphere * radius;
             randomDirection += center.position;
 
-            NavMeshHit hit;
-
-            if (NavMesh.SamplePosition(randomDirection, out hit, 3f, NavMesh.AllAreas))
+            if (NavMesh.SamplePosition(randomDirection, out NavMeshHit hit, 3f, NavMesh.AllAreas))
             {
                 finalPosition = hit.position;
                 pointFound = true;

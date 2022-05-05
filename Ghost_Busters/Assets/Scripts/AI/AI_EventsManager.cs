@@ -19,8 +19,7 @@ public class AI_EventsManager : MonoBehaviour
     public static event System.Action<int, int> OnPossessed;
     public void ObjectPossessed(int objectID, int ghostID)
     {
-        if (OnPossessed != null)
-            OnPossessed(objectID, ghostID);
+        OnPossessed?.Invoke(objectID, ghostID);
     }
     #endregion
 
@@ -28,8 +27,7 @@ public class AI_EventsManager : MonoBehaviour
     public static event System.Action<int> OnCleared;
     public void ObjectCleared(int objectID)
     {
-        if (OnCleared != null)
-            OnCleared(objectID);
+        OnCleared?.Invoke(objectID);
     }
     #endregion 
 

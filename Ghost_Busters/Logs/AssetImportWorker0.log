@@ -1117,3 +1117,4 @@ UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityE
 [C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
 
  -> (artifact id: 'e7eb55e0454ea64c10afba293706993d') in 0.009717 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

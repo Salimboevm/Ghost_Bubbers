@@ -147,3 +147,15 @@ Received Import Request.
   path: Assets/Rosa/FinalAssets/Materials/Sink2.mat
   artifactKey: Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Rosa/FinalAssets/Materials/Sink2.mat using Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50b379e7dcab12720723347a2ce71346') in 0.022551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.083327 seconds.
+  path: Assets/Prefabs/AISharedInfo.prefab
+  artifactKey: Guid(7a1045861e892c44eb6f768bb1ecd7c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AISharedInfo.prefab using Guid(7a1045861e892c44eb6f768bb1ecd7c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f1532d4c9ba2ba65aa1991559c5231a') in 0.019305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Prefabs/Ghost.prefab
+  artifactKey: Guid(f1c73d3c28d7eb84d8a5dcfb664c4c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ghost.prefab using Guid(f1c73d3c28d7eb84d8a5dcfb664c4c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2db610b3cac8c9b9f333152e25ea648') in 0.023737 seconds 

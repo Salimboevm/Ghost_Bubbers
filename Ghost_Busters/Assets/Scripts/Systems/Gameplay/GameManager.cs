@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
     //Pausing Boolean
     [SerializeField] private bool _isGamePaused = false;
 
-
     #region Get/Set
     public bool GetIsGamePaused() { return _isGamePaused; }
     public void SetIsGamePaused(bool state) { _isGamePaused = state; } 

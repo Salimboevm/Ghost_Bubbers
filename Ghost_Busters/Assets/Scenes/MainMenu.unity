@@ -245,35 +245,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sounds:
-  - _name: 
-    _group: {fileID: 0}
-    _clip: {fileID: 0}
-    _volume: 0
-    _pitch: 0
+  - _name: MainMenu
+    _group: {fileID: 3596105012912512224, guid: 3ec6aa670de59994a98dc6248a755636, type: 2}
+    _clip: {fileID: 8300000, guid: a28fcf572dc19324ba4eaa75770adaf9, type: 3}
+    _volume: 1
+    _pitch: 1
     _spatialBlend: 0
-    _maxDistance: 0
+    _maxDistance: 100
     _rolloffMode: 0
     _source: {fileID: 0}
-    _loop: 0
+    _loop: 1
     _ignoreAudioListenerPause: 0
-  - _name: 
-    _group: {fileID: 0}
-    _clip: {fileID: 0}
-    _volume: 0
-    _pitch: 0
+  - _name: Gameplay
+    _group: {fileID: 3596105012912512224, guid: 3ec6aa670de59994a98dc6248a755636, type: 2}
+    _clip: {fileID: 8300000, guid: c1adbb3e81b975741ae14f4b6ca75089, type: 3}
+    _volume: 0.7
+    _pitch: 1
     _spatialBlend: 0
-    _maxDistance: 0
+    _maxDistance: 100
     _rolloffMode: 0
     _source: {fileID: 0}
-    _loop: 0
+    _loop: 1
     _ignoreAudioListenerPause: 0
-  - _name: 
-    _group: {fileID: 0}
-    _clip: {fileID: 0}
-    _volume: 0
-    _pitch: 0
+  - _name: ButtonSound
+    _group: {fileID: 5947359006763750383, guid: 3ec6aa670de59994a98dc6248a755636, type: 2}
+    _clip: {fileID: 8300000, guid: 394e5a52d14bffd47bbefbf3655b7af4, type: 3}
+    _volume: 0.8
+    _pitch: 1
     _spatialBlend: 0
-    _maxDistance: 0
+    _maxDistance: 100
     _rolloffMode: 0
     _source: {fileID: 0}
     _loop: 0
@@ -1363,6 +1363,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6797149293892722233}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: ButtonSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1640827503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1571,7 +1583,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6797149293892722233}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ButtonSound
         m_Mode: 1
@@ -1842,7 +1854,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6797149293892722233}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ButtonDifficulties
+        m_MethodName: ButtonPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1855,6 +1867,18 @@ MonoBehaviour:
       - m_Target: {fileID: 6797149293892722233}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ButtonDifficultyHard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6797149293892722233}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: ButtonSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2000,6 +2024,18 @@ MonoBehaviour:
       - m_Target: {fileID: 6797149293892722233}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ButtonDifficultyMedium
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6797149293892722233}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: ButtonSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2718,7 +2754,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6797149293892722233}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ButtonSound
         m_Mode: 1
@@ -2788,6 +2824,18 @@ MonoBehaviour:
       - m_Target: {fileID: 6797149293892722238}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetFullscreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6797149293892722233}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: ButtonSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3036,7 +3084,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6797149293892722233}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ButtonSound
         m_Mode: 1
@@ -3707,7 +3755,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6797149293892722233}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ButtonSound
         m_Mode: 1
@@ -6447,7 +6495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5.0000305, y: 0}
+  m_AnchoredPosition: {x: -5.000046, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6797149294994043139
@@ -7050,7 +7098,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13734752, y: 0}
   m_AnchorMax: {x: 0.96400005, y: 0.36800003}
-  m_AnchoredPosition: {x: 0.22799683, y: -1.3189}
+  m_AnchoredPosition: {x: 0.22799683, y: -1.3189011}
   m_SizeDelta: {x: -0.21, y: -9.9508}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6797149295202388257
@@ -7138,7 +7186,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5.0000305, y: 0}
+  m_AnchoredPosition: {x: -5.000046, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &6797149295251095612
@@ -7350,7 +7398,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6797149293892722233}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ButtonSound
         m_Mode: 1
@@ -7710,6 +7758,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 6797149293892722233}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: ButtonSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!224 &6797149295400738057
 RectTransform:
@@ -8000,7 +8060,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5.0000305, y: 0}
+  m_AnchoredPosition: {x: -5.0000153, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &6797149295524704666
@@ -8128,7 +8188,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6797149293892722233}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ButtonSound
         m_Mode: 1

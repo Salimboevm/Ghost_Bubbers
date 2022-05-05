@@ -6,11 +6,19 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private GameObject[] _menus;
+    private AudioManager _AM;
 
     #region Making sure that the main menu is active
     private void Awake()
     {
         ButtonMainMenu();
+    }
+
+    private void Start()
+    {
+        _AM = AudioManager._instance;
+        _AM.PlayMusic("MainMenu");
+        _AM.StopMusic("Gameplay");
     }
     #endregion
 
@@ -19,6 +27,9 @@ public class MainMenu : MonoBehaviour
     /// </summary>
     public void ButtonPlay()
     {
+        _AM.StopMusic("MainMenu");
+        _AM.PlayMusic("Gameplay");
+
         SceneManager.LoadScene("GameplayScene");
     }
 
@@ -89,5 +100,10 @@ public class MainMenu : MonoBehaviour
     public void ButtonQuit()
     {
         Application.Quit();
+    }
+
+    public void ButtonSound()
+    {
+        _AM.PlaySFX("ButtonSound");
     }
 }

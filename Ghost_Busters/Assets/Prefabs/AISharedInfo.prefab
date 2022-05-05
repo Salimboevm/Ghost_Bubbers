@@ -66,3 +66,5 @@ MonoBehaviour:
   _ghosts:
   - {fileID: 0}
   - {fileID: 0}
+  _debug: 1
+  _directionCubeGO: {fileID: 7887204434190003528, guid: 781c9aced9f08784b85d99f8c6ea0d65, type: 3}

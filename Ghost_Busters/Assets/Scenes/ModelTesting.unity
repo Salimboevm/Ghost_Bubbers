@@ -3879,7 +3879,7 @@ PrefabInstance:
     - target: {fileID: 4484733673639114227, guid: ae2c036429409c04ebd901da1d962549, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 302311ed7fd81f24e9174b6b7e330c53, type: 2}
+      objectReference: {fileID: 2100000, guid: aaa14922fc0b0c1439e08ab6159a2a1c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae2c036429409c04ebd901da1d962549, type: 3}
 --- !u!1 &1832270334
@@ -4274,11 +4274,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 077de32917e3dde41bbcb56b84513a4a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-<<<<<<< HEAD
-      objectReference: {fileID: 2100000, guid: b557146301c282548b8513aa694a341c, type: 2}
-=======
       objectReference: {fileID: 2100000, guid: aaa14922fc0b0c1439e08ab6159a2a1c, type: 2}
->>>>>>> main
     - target: {fileID: 919132149155446097, guid: 077de32917e3dde41bbcb56b84513a4a, type: 3}
       propertyPath: m_Name
       value: Sink

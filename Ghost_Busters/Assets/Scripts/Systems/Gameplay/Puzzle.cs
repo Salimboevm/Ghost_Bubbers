@@ -8,6 +8,7 @@ public class Puzzle : MonoBehaviour
     /// ID of the object which this puzzle will solve
     /// </summary>
     private int objectID = 0;
+    [SerializeField] private GameObject puzzleObject;
 
     #region Get/Set
     public int GetObjectID() { return objectID; }

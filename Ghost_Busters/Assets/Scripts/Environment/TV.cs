@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TV : MonoBehaviour
+public class TV : Possessable
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Animator anim;
+
+    public override void Possess()
     {
-        
+        anim.SetBool("Active", true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Unpossess()
     {
-        
+        anim.SetBool("Active", false);
     }
 }

@@ -6,5 +6,5 @@ public abstract class Possessable : MonoBehaviour
 {
     public abstract void Possess();
 
-    public abstract void Unossess();
+    public abstract void Unpossess();
 }

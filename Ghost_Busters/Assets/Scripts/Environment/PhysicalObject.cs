@@ -21,7 +21,7 @@ public class PhysicalObject : Possessable
         possessed = true;
     }
 
-    public override void Unossess()
+    public override void Unpossess()
     {
         possessed = false;
     }

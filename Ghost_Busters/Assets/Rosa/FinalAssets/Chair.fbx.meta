@@ -5,8 +5,11 @@ ModelImporter:
   internalIDToNameTable: []
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   externalObjects: {}
 =======
+=======
+>>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5
 =======
 >>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5
   externalObjects:
@@ -16,6 +19,9 @@ ModelImporter:
       name: lambert1
     second: {fileID: 2100000, guid: cfc7e447e3f8d4d47b33b6bd7fd329ea, type: 2}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5
+=======
 >>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5
 =======
 >>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5

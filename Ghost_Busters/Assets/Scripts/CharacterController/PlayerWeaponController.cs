@@ -1,7 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
-
+enum WeaponTypesEnum
+{
+    idle,
+    trap,
+    vacuum,
+    rifle
+}
 public class PlayerWeaponController : MonoBehaviour
 {
 
@@ -11,10 +18,17 @@ public class PlayerWeaponController : MonoBehaviour
     [SerializeField]
     GameObject currentWeapon;
     int weaponNumber = 0;
+    [SerializeField]
+    WeaponTypesEnum weaponTypes;
+
+    internal WeaponTypesEnum WeaponTypes { get => weaponTypes;private set => weaponTypes = value; }
+
     private void Start()
     {
         playerInputInstance = InputFromPlayer.Instance;
-        currentWeapon = weapons[0];
+        currentWeapon = weapons[weaponNumber];
+        WeaponTypes = (WeaponTypesEnum)weaponNumber;
+
     }
     private void Update()
     {
@@ -27,6 +41,7 @@ public class PlayerWeaponController : MonoBehaviour
         CheckAndCalculateWeaponNumber();//calculate weapon number
         currentWeapon = weapons[weaponNumber];//change current weapon
         currentWeapon.SetActive(true);//activate current weapon
+        WeaponTypes = (WeaponTypesEnum)weaponNumber;//change weapon type
     }
     void CheckAndCalculateWeaponNumber()
     {
@@ -48,15 +63,29 @@ public class PlayerWeaponController : MonoBehaviour
     }
     bool ReturnScrollValueIsUp()
     {
-        if (playerInputInstance.GetAndReturnScrollWheelValue().y > 0)
-            return true;
-        return false;
+        return (playerInputInstance.GetScrollWheelValue().y > 0);
     }
     bool ReturnScrollValueIsDown()
     {
-        if (playerInputInstance.GetAndReturnScrollWheelValue().y < 0)
+        return (playerInputInstance.GetScrollWheelValue().y < 0);
+            
+    }
+    bool ReturnRifleWeaponType()
+    {
+        if (WeaponTypes == WeaponTypesEnum.rifle)
             return true;
         return false;
-    
+    }
+    bool ReturnVacuumWeaponType()
+    {
+        if (WeaponTypes == WeaponTypesEnum.vacuum)
+            return true;
+        return false;
+    }
+    bool ReturnTrapWeaponType()
+    {
+        if (WeaponTypes == WeaponTypesEnum.trap)
+            return true;
+        return false;
     }
 }

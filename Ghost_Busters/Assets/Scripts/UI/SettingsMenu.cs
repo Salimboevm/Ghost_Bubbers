@@ -129,6 +129,9 @@ public class SettingsMenu : MonoBehaviour
         _audioMixer.SetFloat("MasterVolume", _audioSliders[0].value);
         _audioPercent[0].text = ((100 - (_audioSliders[0].value / _minVolume) * -100f)).ToString() + "%";
 
+        Debug.Log("Master: " + _audioSliders[0].value);
+        Debug.Log("Master: " + ((100 - (_audioSliders[0].value / _minVolume) * -100f)).ToString() + "%");
+
         //Checks if there is supposed to be no sound
         if (_audioSliders[0].value == -_minVolume)
         {
@@ -147,6 +150,9 @@ public class SettingsMenu : MonoBehaviour
         _audioMixer.SetFloat("MusicVolume", _audioSliders[2].value);
         _audioPercent[2].text = ((100 - (_audioSliders[2].value / _minVolume) * -100f)).ToString() + "%";
 
+        Debug.Log("Music: " + _audioSliders[2].value);
+        Debug.Log("Music: " + ((100 - (_audioSliders[2].value / _minVolume) * -100f)).ToString() + "%");
+
         //Checks if there is supposed to be no sound
         if (_audioSliders[2].value == -_minVolume)
         {
@@ -164,6 +170,9 @@ public class SettingsMenu : MonoBehaviour
     {
         _audioMixer.SetFloat("SFXVolume", _audioSliders[1].value);
         _audioPercent[1].text = ((100 - (_audioSliders[1].value / _minVolume) * -100f)).ToString() + "%";
+
+        Debug.Log("SFX: " + _audioSliders[2].value);
+        Debug.Log("SFX: " + ((100 - (_audioSliders[2].value / _minVolume) * -100f)).ToString() + "%");
 
         //Checks if there is supposed to be no sound
         if (_audioSliders[1].value == -_minVolume)

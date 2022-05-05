@@ -111,10 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eddebdf4fceca74b95c90b2ee8e3724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _runAwayDistance: 6
-  _avoidanceRunAwayDistance: 1.5
-  _fleeingDistance: 6
-  _possessableDistance: 0.4
+  _runAwayDistance: 5
 --- !u!195 &5216970493130678599
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -129,7 +126,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0.2
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

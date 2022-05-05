@@ -6,9 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/MainMenu.unity
     guid: b80b9aeccb2d3b14eb4c32c29d9e417f
   - enabled: 1
     path: Assets/Scenes/GameplayScene.unity
     guid: 4f004c8b9438fbc48ba14f72f7b7eb28
+=======
+    path: Assets/Scenes/SampleScene.unity
+    guid: d1c3109bdb54ad54c8a2b2838528e640
+>>>>>>> parent of 1629b7f (Merge branch 'main' into Environmental-Design)
   m_configObjects: {}

@@ -43,9 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414d6efba0800f643bf43496417adef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerGO: {fileID: 0}
-  _objectsGO: []
-  _numberOfPossesableObjects: 4
   _objects:
   - _object: {fileID: 0}
     _objectID: 1
@@ -57,14 +54,6 @@ MonoBehaviour:
     _possessed: 0
     _puzzleSolved: 0
     _ghostID: -1
-  _ghostPrefab: {fileID: 5216970493130678596, guid: f1c73d3c28d7eb84d8a5dcfb664c4c29, type: 3}
-  _ammountOfGhosts: 3
-  _ghostSpawnPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   _ghosts:
   - {fileID: 0}
   - {fileID: 0}
-  _debug: 1
-  _directionCubeGO: {fileID: 7887204434190003528, guid: 781c9aced9f08784b85d99f8c6ea0d65, type: 3}

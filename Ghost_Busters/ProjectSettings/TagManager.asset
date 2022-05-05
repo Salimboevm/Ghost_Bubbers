@@ -6,8 +6,6 @@ TagManager:
   tags:
   - PhysObject
   - Wall
-  - PossessableObject
-  - Ghost
   layers:
   - Default
   - TransparentFX

@@ -3,11 +3,19 @@
     "m_Path": "ProjectSettings/Packages/com.unity.probuilder/Settings.json",
     "m_Dictionary": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "m_DictionaryValues": []
 =======
 <<<<<<< HEAD
         "m_DictionaryValues": []
 =======
+=======
+<<<<<<< HEAD
+        "m_DictionaryValues": []
+=======
+=======
+>>>>>>> main
+>>>>>>> parent of 16a9326 (2)
         "m_DictionaryValues": [
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -210,7 +218,14 @@
                 "value": "{\"m_Value\":1.0}"
             }
         ]
+<<<<<<< HEAD
 >>>>>>> main
 >>>>>>> parent of 8ad589b (1)
+=======
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
+>>>>>>> parent of 16a9326 (2)
     }
 }

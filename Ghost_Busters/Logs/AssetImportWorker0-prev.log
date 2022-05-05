@@ -1,16 +1,25 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.19f1 (5f5eb8bbdc25) revision 6250168'; Using compiler version '192528614'; Build Type 'Release'
+<<<<<<< HEAD
 OS: 'Windows 10 Education N; OS build 19044.1645; Version 2009; 64bit' Language: 'cs' Physical Memory: 16316 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
 F:\Unity\Installs\2021.1.19f1\Editor\Unity.exe
+=======
+OS: 'Windows 10 Home; OS build 22000.613; Version 2009; 64bit' Language: 'en' Physical Memory: 32617 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\Editor\Unity.exe
+>>>>>>> Environment-art
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< HEAD
 C:/Users/JBlackCZ/Documents/GitHub/Ghost_Bubbers2/Ghost_Busters
 -logFile
 Logs/AssetImportWorker0.log
@@ -50,11 +59,51 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (3301ms)
 		BeginReloadAssembly (126ms)
+=======
+C:/Users/Rosa Spinola/OneDrive/Documents/GitHub/Ghost_Bubbers/Ghost_Busters
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61724
+Successfully changed project path to: C:/Users/Rosa Spinola/OneDrive/Documents/GitHub/Ghost_Bubbers/Ghost_Busters
+C:/Users/Rosa Spinola/OneDrive/Documents/GitHub/Ghost_Bubbers/Ghost_Busters
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 77.94 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.19f1 (5f5eb8bbdc25)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Rosa Spinola/OneDrive/Documents/GitHub/Ghost_Bubbers/Ghost_Busters/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f50)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   30.0.15.1215
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002041 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 75.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.714 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1714ms)
+		BeginReloadAssembly (86ms)
+>>>>>>> Environment-art
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 		EndReloadAssembly (505ms)
 			LoadAssemblies (127ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -69,12 +118,29 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (2ms)
 				ProcessInitializeOnLoadAttributes (114ms)
 				ProcessInitializeOnLoadMethodAttributes (35ms)
+=======
+		EndReloadAssembly (626ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (254ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (262ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (135ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+>>>>>>> Environment-art
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.006711 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -121,6 +187,53 @@ System memory in use after: 155.0 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3906.
 Total: 4.838000 ms (FindLiveObjects: 0.396300 ms CreateObjectMapping: 0.124300 ms MarkObjects: 4.194900 ms  DeleteObjects: 0.121300 ms)
+=======
+Registered in 0.004865 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 80.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.764 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1765ms)
+		BeginReloadAssembly (309ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (1360ms)
+			LoadAssemblies (134ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (479ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (546ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (81ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (353ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3033 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.9 MB.
+System memory in use after: 137.1 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3486.
+Total: 4.498200 ms (FindLiveObjects: 0.275900 ms CreateObjectMapping: 0.166500 ms MarkObjects: 3.965900 ms  DeleteObjects: 0.088700 ms)
+>>>>>>> Environment-art
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -135,6 +248,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   path: Assets/Scenes/TestingScene.unity
   artifactKey: Guid(4c15f24fcce0bb141b672add202438b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/TestingScene.unity using Guid(4c15f24fcce0bb141b672add202438b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '589b887ec6ee56d5bf869336b47b3b90') in 0.019642 seconds 
@@ -7573,3 +7687,105 @@ C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFAF7430000), size: 1982464 (r
 
 A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
  * C:/Users/JBlackCZ/AppData/Local/Temp/Unity/Editor/Crashes
+=======
+  path: Assets/Rosa/FinalAssets/Oven.fbx
+  artifactKey: Guid(ae2c036429409c04ebd901da1d962549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Oven.fbx using Guid(ae2c036429409c04ebd901da1d962549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61010cd83d15d7f13c7c8cf28ad6e4fa') in 0.464169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.918796 seconds.
+  path: Assets/Rosa/FinalAssets/Oven.fbx
+  artifactKey: Guid(ae2c036429409c04ebd901da1d962549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Oven.fbx using Guid(ae2c036429409c04ebd901da1d962549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06a1dc92ddcf09a469bc3a372a85367') in 0.041331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.657645 seconds.
+  path: Assets/Rosa/FinalAssets/Oven.fbx
+  artifactKey: Guid(ae2c036429409c04ebd901da1d962549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Oven.fbx using Guid(ae2c036429409c04ebd901da1d962549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa94098da6868e92d1fc4cc79d8b23fe') in 0.036207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.883954 seconds.
+  path: Assets/Rosa/FinalAssets/Oven.fbx
+  artifactKey: Guid(ae2c036429409c04ebd901da1d962549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Oven.fbx using Guid(ae2c036429409c04ebd901da1d962549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6039bbedb4e0529a9f5b1d54633a957f') in 0.044002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.552423 seconds.
+  path: Assets/Rosa/FinalAssets/Oven.fbx
+  artifactKey: Guid(ae2c036429409c04ebd901da1d962549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Oven.fbx using Guid(ae2c036429409c04ebd901da1d962549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38479642d6f126993e92b410e5f92f58') in 0.047367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.783402 seconds.
+  path: Assets/Rosa/FinalAssets/Oven.mat
+  artifactKey: Guid(bdc96aca3a346bd46addffe29fb420c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Oven.mat using Guid(bdc96aca3a346bd46addffe29fb420c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa501178fda74c63448b7a948af339b5') in 0.015376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.578133 seconds.
+  path: Assets/Rosa/FinalAssets/Materials/Ceiling.mat
+  artifactKey: Guid(65923c2cea291dc4a85fc48040e88d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Materials/Ceiling.mat using Guid(65923c2cea291dc4a85fc48040e88d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dca754849961e5c1004a45caee17941') in 0.016445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Rosa/FinalAssets/Materials/lambert1.mat
+  artifactKey: Guid(7cf3a4b9e69cd8444b21a63ed6d90356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Materials/lambert1.mat using Guid(7cf3a4b9e69cd8444b21a63ed6d90356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0bd7033e0484a10d9e4e15466611bf1') in 0.015814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 600.051819 seconds.
+  path: Assets/Rosa/FinalAssets/wineglass.fbx
+  artifactKey: Guid(afcca1a61faa71a4393b937c40b3fa02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/wineglass.fbx using Guid(afcca1a61faa71a4393b937c40b3fa02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb331e6dc5efc1762fec65c68e426b3') in 0.029049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 154.850552 seconds.
+  path: Assets/Rosa/FinalAssets/Materials/Textures/wineglass_lambert1_AlbedoTransparency.1001.tga
+  artifactKey: Guid(76fda901594a9404f9cf9756fcbea696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Materials/Textures/wineglass_lambert1_AlbedoTransparency.1001.tga using Guid(76fda901594a9404f9cf9756fcbea696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdea3653268b95e48880e5674f8e6193') in 0.040091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Rosa/FinalAssets/Materials/Textures/wineglass_lambert1_Normal.1001.tga
+  artifactKey: Guid(ef56dc8e3b2ef734c8ff5f7870f3821c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Materials/Textures/wineglass_lambert1_Normal.1001.tga using Guid(ef56dc8e3b2ef734c8ff5f7870f3821c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91bcbeb4add2ae571c5626e2917178be') in 0.016387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Rosa/FinalAssets/Materials/Textures/wineglass_lambert1_MetallicSmoothness.1001.tga
+  artifactKey: Guid(3a4a15b0dc37c964395dbc39df5eaa29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Materials/Textures/wineglass_lambert1_MetallicSmoothness.1001.tga using Guid(3a4a15b0dc37c964395dbc39df5eaa29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca7d79efe8338572200af9efa63d14e4') in 0.017863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.090551 seconds.
+  path: Assets/Rosa/FinalAssets/Materials/Wine glass.mat
+  artifactKey: Guid(2974423db3d8e9147b2ecb5309383960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Materials/Wine glass.mat using Guid(2974423db3d8e9147b2ecb5309383960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b235b6b19ad6a72abcdaf59c9c3b113') in 0.017220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.694884 seconds.
+  path: Assets/Rosa/FinalAssets/Materials/Textures/wineglass_lambert1_Normal.1001.tga
+  artifactKey: Guid(ef56dc8e3b2ef734c8ff5f7870f3821c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Materials/Textures/wineglass_lambert1_Normal.1001.tga using Guid(ef56dc8e3b2ef734c8ff5f7870f3821c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e89d52a6cc9ac4f17e9d71870e61a1') in 0.021173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 226.049866 seconds.
+  path: Assets/Rosa/FinalAssets/Materials/Wine glass.mat
+  artifactKey: Guid(2974423db3d8e9147b2ecb5309383960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Materials/Wine glass.mat using Guid(2974423db3d8e9147b2ecb5309383960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '661749fc1cc3707142acd4a6a3d1cb1e') in 0.019154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 184.650826 seconds.
+  path: Assets/Rosa/FinalAssets/Materials/door.mat
+  artifactKey: Guid(266bb2ff2c421074fbbd3f94907d5a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Materials/door.mat using Guid(266bb2ff2c421074fbbd3f94907d5a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab31711c3aa3cf3ed95308cc327898f7') in 0.019852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Rosa/FinalAssets/Materials/WINDOW.mat
+  artifactKey: Guid(bf8d9c4c0bce0ce4b90725b7877c47bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Materials/WINDOW.mat using Guid(bf8d9c4c0bce0ce4b90725b7877c47bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14af848a840ce8de089123e02be5e1c6') in 0.017726 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+>>>>>>> Environment-art

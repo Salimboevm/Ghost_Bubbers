@@ -15,11 +15,11 @@ C:/Users/Rosa Spinola/OneDrive/Documents/GitHub/Ghost_Bubbers/Ghost_Busters
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55577
+61773
 Successfully changed project path to: C:/Users/Rosa Spinola/OneDrive/Documents/GitHub/Ghost_Bubbers/Ghost_Busters
 C:/Users/Rosa Spinola/OneDrive/Documents/GitHub/Ghost_Bubbers/Ghost_Busters
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 108.45 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 80.93 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.19f1 (5f5eb8bbdc25)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/Editor/Data/Resources/UnitySubsystems
@@ -35,89 +35,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56676
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002108 seconds.
+Registered in 0.001565 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 85.50 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 79.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.855 seconds
+- Completed reload, in  1.384 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1856ms)
-		BeginReloadAssembly (106ms)
+	ReloadAssembly (1385ms)
+		BeginReloadAssembly (74ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (631ms)
-			LoadAssemblies (103ms)
+		EndReloadAssembly (563ms)
+			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (250ms)
+			SetupTypeCache (197ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (268ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (276ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (86ms)
+				RefreshPlugins (80ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (131ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
+				ProcessInitializeOnLoadAttributes (142ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004556 seconds.
+Registered in 0.004437 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 91.84 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 105.75 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.730 seconds
+- Completed reload, in  1.692 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1731ms)
-		BeginReloadAssembly (207ms)
+	ReloadAssembly (1693ms)
+		BeginReloadAssembly (187ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
+			CreateAndSetChildDomain (23ms)
 		EndReloadAssembly (1429ms)
-			LoadAssemblies (136ms)
+			LoadAssemblies (129ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (470ms)
+			SetupTypeCache (483ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (73ms)
-			SetupLoadedEditorAssemblies (607ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (614ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (92ms)
-				BeforeProcessingInitializeOnLoad (109ms)
-				ProcessInitializeOnLoadAttributes (382ms)
+				RefreshPlugins (106ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (379ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (1ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 1.31 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3448 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.5 MB.
+System memory in use before: 155.6 MB.
 System memory in use after: 155.7 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3903.
-Total: 7.309800 ms (FindLiveObjects: 0.396800 ms CreateObjectMapping: 0.234300 ms MarkObjects: 6.501400 ms  DeleteObjects: 0.175800 ms)
+Total: 4.901700 ms (FindLiveObjects: 0.318700 ms CreateObjectMapping: 0.197300 ms MarkObjects: 4.251800 ms  DeleteObjects: 0.132000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,989 +132,18 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Player.physicMaterial
-  artifactKey: Guid(c428549b4a0dfa64dbac207708b06944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Player.physicMaterial using Guid(c428549b4a0dfa64dbac207708b06944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdedaf85380d8488af318a18b79ee340') in 0.059328 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 238.644200 seconds.
-  path: Assets/Rosa/FinalAssets/Pan.fbx
-  artifactKey: Guid(4f9027a7c59453e459ce546b15b7a36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Pan.fbx using Guid(4f9027a7c59453e459ce546b15b7a36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0df7b920895c4a613131fdb2a9d57fb') in 0.421652 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 36.849557 seconds.
-  path: Assets/Rosa/FinalAssets/Sink.fbx
-  artifactKey: Guid(077de32917e3dde41bbcb56b84513a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Sink.fbx using Guid(077de32917e3dde41bbcb56b84513a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a094ab2d529131586830038bab64518') in 0.041187 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.406986 seconds.
-  path: Assets/Rosa/FinalAssets/Sink2.fbx
-  artifactKey: Guid(3e8d910b78cb78643953b5101303d2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Sink2.fbx using Guid(3e8d910b78cb78643953b5101303d2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a2f99aad34a45e57b264360034262b6') in 0.044467 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.228919 seconds.
-  path: Assets/Rosa/FinalAssets/Materials
-  artifactKey: Guid(7ebebe146e0b73745a6877c42c6bd32f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials using Guid(7ebebe146e0b73745a6877c42c6bd32f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706b3704385f44eb0597b6ddef9a7694') in 0.006286 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.740858 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/pan.mat
-  artifactKey: Guid(a601004201bd94e4d8c4247d66ccb103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/pan.mat using Guid(a601004201bd94e4d8c4247d66ccb103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de36a9cfc31cd2197751572cfd1d9b11') in 0.018530 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.721449 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/sink.mat
+  path: Assets/Rosa/FinalAssets/Materials/Sink.mat
   artifactKey: Guid(aaa14922fc0b0c1439e08ab6159a2a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/sink.mat using Guid(aaa14922fc0b0c1439e08ab6159a2a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0158ae0c4819e0d8b81a068a0e5d19c') in 0.015735 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.700050 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/sink2.mat
-  artifactKey: Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/sink2.mat using Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd88e447082e8d6b816b36dfe29507bea') in 0.013766 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.902091 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures
-  artifactKey: Guid(79d9c818278056e498c9910659dc3db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures using Guid(79d9c818278056e498c9910659dc3db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e947b5686715453e9c9babfb27f7716') in 0.006603 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.414451 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_AlbedoTransparency.1001.tga
-  artifactKey: Guid(7a3208dd83bf097499963e524b373e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_AlbedoTransparency.1001.tga using Guid(7a3208dd83bf097499963e524b373e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1491241570605d4dc593e100c5d59da9') in 0.051245 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000339 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_MetallicSmoothness.1001.tga
-  artifactKey: Guid(76677352e3d02ef458502b1951c807e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_MetallicSmoothness.1001.tga using Guid(76677352e3d02ef458502b1951c807e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313c121c5780cfdc06f823e80e19e2f8') in 0.019475 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000326 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_Normal.1001.tga
-  artifactKey: Guid(1b310ed5d30540f4c8d99c6ee00a16da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_Normal.1001.tga using Guid(1b310ed5d30540f4c8d99c6ee00a16da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ec1fb5a29e420ee20acbc028dddc4b') in 0.021556 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.275457 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sink2_lambert1_AlbedoTransparency.1001.tga
-  artifactKey: Guid(d530e2a69e62ec745a5a109cb7d775ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sink2_lambert1_AlbedoTransparency.1001.tga using Guid(d530e2a69e62ec745a5a109cb7d775ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69350f2be6a9157b99a458bc11dc1d2a') in 0.017020 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000391 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sink2_lambert1_Normal.1001.tga
-  artifactKey: Guid(1a085b392f9792247ace7a65d423070a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sink2_lambert1_Normal.1001.tga using Guid(1a085b392f9792247ace7a65d423070a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ef4b478a447487f164a30efa8d9dc39') in 0.016289 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sink_lambert1_MetallicSmoothness.1001.tga
-  artifactKey: Guid(27d273a5ae681f643878328c2b6d84e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sink_lambert1_MetallicSmoothness.1001.tga using Guid(27d273a5ae681f643878328c2b6d84e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a87cbb0be6f6b66d1a1ee60a25066059') in 0.018834 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000297 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sink_lambert1_AlbedoTransparency.1001.tga
-  artifactKey: Guid(a20aa6b0fcc57084492443aa4b9e126e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sink_lambert1_AlbedoTransparency.1001.tga using Guid(a20aa6b0fcc57084492443aa4b9e126e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd88725119885640324ee1fbc31be471e') in 0.020310 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sink2_lambert1_MetallicSmoothness.1001.tga
-  artifactKey: Guid(bbd5ef5781c1d1540a48840cadbe9d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sink2_lambert1_MetallicSmoothness.1001.tga using Guid(bbd5ef5781c1d1540a48840cadbe9d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '978f589a8e209f78f67a49ed12711067') in 0.015865 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000288 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sink_lambert1_Normal.1001.tga
-  artifactKey: Guid(78b5e4a74cd8d7042aeb55558e0ad69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sink_lambert1_Normal.1001.tga using Guid(78b5e4a74cd8d7042aeb55558e0ad69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c1fd8a041df7f9efe7dfdbf0d9146eb') in 0.019954 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.189838 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Fridge/Friddgebot.mat
-  artifactKey: Guid(0898e772c46fab64ca4016ba54001639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Fridge/Friddgebot.mat using Guid(0898e772c46fab64ca4016ba54001639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bd154a56ac7b5082a53c98cdf3b6220') in 0.021221 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Fridge/Fridge.mat
-  artifactKey: Guid(29b6f3836bffaaf4aa40eadbb7a5ab23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Fridge/Fridge.mat using Guid(29b6f3836bffaaf4aa40eadbb7a5ab23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ffa15655491b50cdf7a488da5b10bf2') in 0.020975 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000297 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Fridge/Fridgetop.mat
-  artifactKey: Guid(1678801759cfd2748876641b64098c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Fridge/Fridgetop.mat using Guid(1678801759cfd2748876641b64098c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad51be9e71c9667fa77c2f6587dae560') in 0.029071 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Fridge/Fridge 1.mat
-  artifactKey: Guid(8e86aec853bca08449c67c7ff75c6bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Fridge/Fridge 1.mat using Guid(8e86aec853bca08449c67c7ff75c6bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dac37a66e4a8ca73ca02fe4bb2f7147f') in 0.024358 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 42.147774 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_Normal.1001.tga
-  artifactKey: Guid(1b310ed5d30540f4c8d99c6ee00a16da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_Normal.1001.tga using Guid(1b310ed5d30540f4c8d99c6ee00a16da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7170ec2331dc2913c0fd614378d6af45') in 0.019631 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 173.499763 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/pan.mat
-  artifactKey: Guid(a601004201bd94e4d8c4247d66ccb103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/pan.mat using Guid(a601004201bd94e4d8c4247d66ccb103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4906f5f7486113fc59481edc160942') in 0.024538 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/sink.mat
-  artifactKey: Guid(aaa14922fc0b0c1439e08ab6159a2a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/sink.mat using Guid(aaa14922fc0b0c1439e08ab6159a2a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11874ed19f73af9a3aed26777eaa6ce6') in 0.020925 seconds 
+Start importing Assets/Rosa/FinalAssets/Materials/Sink.mat using Guid(aaa14922fc0b0c1439e08ab6159a2a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ab4d1be7b6b0e33c64c22d49ee5d45') in 0.338568 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000384 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/sink2.mat
-  artifactKey: Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/sink2.mat using Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a19b21f0596fcdcc225912e48d8e7fc3') in 0.017794 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004542 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.486 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1487ms)
-		BeginReloadAssembly (211ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (59ms)
-		EndReloadAssembly (1195ms)
-			LoadAssemblies (123ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (428ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (399ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (304ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (27ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2924 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 149.0 MB.
-System memory in use after: 149.2 MB.
-
-Unloading 199 unused Assets to reduce memory usage. Loaded Objects now: 3941.
-Total: 4.846500 ms (FindLiveObjects: 0.332200 ms CreateObjectMapping: 0.205500 ms MarkObjects: 4.218800 ms  DeleteObjects: 0.088300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 453.525603 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Fridge
-  artifactKey: Guid(409697b2c9143d241a7cef41957859bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Fridge using Guid(409697b2c9143d241a7cef41957859bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c455ded292e8e142ab147d49cb763017') in 0.015476 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.599857 seconds.
-  path: Assets/Rosa/FinalAssets
-  artifactKey: Guid(f93bc0d0b16fe1748a57c6c436d0c38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets using Guid(f93bc0d0b16fe1748a57c6c436d0c38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '733e659a6696e63367cf4b67e6708a2c') in 0.008306 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.789648 seconds.
-  path: Assets/Rosa/Floor
-  artifactKey: Guid(779b2b0c63622a54d8f94e6550570a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/Floor using Guid(779b2b0c63622a54d8f94e6550570a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1094885e04670825fcc24620f07efcf') in 0.008738 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.943418 seconds.
-  path: Assets/Rosa/Floor/livingroomfloor
-  artifactKey: Guid(41738e2ab85f431429927edb3c451000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/Floor/livingroomfloor using Guid(41738e2ab85f431429927edb3c451000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b870bcd698f52626ed5b4f36727b694a') in 0.007609 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.063457 seconds.
-  path: Assets/Rosa/Floor/livingroomfloor/livingroomflooor_ambientOcclusion.tga
-  artifactKey: Guid(f4859b22205781e488b034d53589f00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/Floor/livingroomfloor/livingroomflooor_ambientOcclusion.tga using Guid(f4859b22205781e488b034d53589f00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bae4497054ff26d3765187777c85868') in 0.054266 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/Rosa/Floor/livingroomfloor/livingroomflooor_basecolor.tga
-  artifactKey: Guid(efa1c15a223943947b0b6b67612b639e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/Floor/livingroomfloor/livingroomflooor_basecolor.tga using Guid(efa1c15a223943947b0b6b67612b639e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd89d7d12c34275976d9018862f7f6ce') in 0.014703 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000439 seconds.
-  path: Assets/Rosa/Floor/livingroomfloor/livingroomflooor_normal.tga
-  artifactKey: Guid(ee7df9d55dea969438436ef5d8da0553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/Floor/livingroomfloor/livingroomflooor_normal.tga using Guid(ee7df9d55dea969438436ef5d8da0553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7617891655cdb707941a0aafd53d69a6') in 0.025547 seconds 
+  path: Assets/Rosa/FinalAssets/Materials/Pan.mat
+  artifactKey: Guid(a601004201bd94e4d8c4247d66ccb103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rosa/FinalAssets/Materials/Pan.mat using Guid(a601004201bd94e4d8c4247d66ccb103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf8ec208a1f2965bf52f8a61da11e8a8') in 0.030271 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000337 seconds.
-  path: Assets/Rosa/Floor/livingroomfloor/livingroomflooor_roughness.tga
-  artifactKey: Guid(2fdd63c7486f908408abf5d9542dda62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/Floor/livingroomfloor/livingroomflooor_roughness.tga using Guid(2fdd63c7486f908408abf5d9542dda62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c30732d677c297d7418bb70f6f0b302') in 0.017793 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/Rosa/Floor/livingroomfloor/livingroomfloor.mat
-  artifactKey: Guid(b96ac3f9e39cb914cb331a83b08c3bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/Floor/livingroomfloor/livingroomfloor.mat using Guid(b96ac3f9e39cb914cb331a83b08c3bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8102e6c0fdb6901c4aa32f5d2263efe') in 0.275311 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.700484 seconds.
-  path: Assets/Rosa/Floor/Kitchenfloor/Floor.mat
-  artifactKey: Guid(6dc1f18b38618ea45ad203a787deb132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/Floor/Kitchenfloor/Floor.mat using Guid(6dc1f18b38618ea45ad203a787deb132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b0aa1dee62ce341ecdf4750f18f11cb') in 0.020009 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Rosa/Floor/Kitchenfloor/Wall_basecolor.tga
-  artifactKey: Guid(34a0cc2cca67f4c4c8b578c185f5982c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/Floor/Kitchenfloor/Wall_basecolor.tga using Guid(34a0cc2cca67f4c4c8b578c185f5982c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd6713a389a1adb971d6fd6514ff8bc6') in 0.014624 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000346 seconds.
-  path: Assets/Rosa/Floor/Kitchenfloor/Wall_normal.tga
-  artifactKey: Guid(649929de1141a6649bd8a8a0b8a921c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/Floor/Kitchenfloor/Wall_normal.tga using Guid(649929de1141a6649bd8a8a0b8a921c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8d3cf29d8e017021856740d7380ad2') in 0.037115 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/Rosa/Floor/Kitchenfloor/Wall_ambientOcclusion.tga
-  artifactKey: Guid(d33fbdc345e9c7d4dbfd567703da21d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/Floor/Kitchenfloor/Wall_ambientOcclusion.tga using Guid(d33fbdc345e9c7d4dbfd567703da21d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6d972f4825b233b193058524c8c8af') in 0.021603 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/Rosa/Floor/Kitchenfloor/Wall_roughness.tga
-  artifactKey: Guid(8bff86f320a095043a56acbe96346874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/Floor/Kitchenfloor/Wall_roughness.tga using Guid(8bff86f320a095043a56acbe96346874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '498f904d67e16a1bc90eaa6fb21bc309') in 0.044820 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 32.639384 seconds.
-  path: Assets/Rosa/FinalAssets/Sink.fbx
-  artifactKey: Guid(077de32917e3dde41bbcb56b84513a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Sink.fbx using Guid(077de32917e3dde41bbcb56b84513a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0595fe6bc790315e1a2ad4b07ce6ad8c') in 0.077757 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000303 seconds.
-  path: Assets/Rosa/FinalAssets/Sink2.fbx
-  artifactKey: Guid(3e8d910b78cb78643953b5101303d2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Sink2.fbx using Guid(3e8d910b78cb78643953b5101303d2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af26a99ac0b4572c5221a143f0cf2de') in 0.029217 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.892824 seconds.
-  path: Assets/Rosa/FinalAssets/Pan.fbx
-  artifactKey: Guid(4f9027a7c59453e459ce546b15b7a36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Pan.fbx using Guid(4f9027a7c59453e459ce546b15b7a36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef4453ccdc2ae96c323547c1f18b1f0') in 0.049946 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.817699 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Pan.mat
-  artifactKey: Guid(a601004201bd94e4d8c4247d66ccb103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Pan.mat using Guid(a601004201bd94e4d8c4247d66ccb103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6433c20062418056ad98fd1165d08299') in 0.012635 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.539311 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Aink.mat
-  artifactKey: Guid(b557146301c282548b8513aa694a341c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Aink.mat using Guid(b557146301c282548b8513aa694a341c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '968a5ae0079a4e024d43265304b2dbd3') in 0.016454 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.337898 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Sink.mat
-  artifactKey: Guid(b557146301c282548b8513aa694a341c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Sink.mat using Guid(b557146301c282548b8513aa694a341c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfcffbf5c2b4935d515bfdf491661a9d') in 0.012600 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.420615 seconds.
   path: Assets/Rosa/FinalAssets/Materials/Sink2.mat
   artifactKey: Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Sink2.mat using Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '857e5ff5f03c2dd0ccf877b34cd0cd73') in 0.010039 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.848566 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Chair_lambert1_AlbedoTransparency.1001.tga
-  artifactKey: Guid(ed9a790621ab25544b8c739ac35b5788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Chair_lambert1_AlbedoTransparency.1001.tga using Guid(ed9a790621ab25544b8c739ac35b5788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a9e2f79ff7e95fc979c459a53c530f') in 0.015717 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgebot1_BaseMap.1001.tga
-  artifactKey: Guid(31cf960aa64bc5c4e8405a23ce97e144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgebot1_BaseMap.1001.tga using Guid(31cf960aa64bc5c4e8405a23ce97e144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2228690bce17e19e5dff7f5a5e95cf7b') in 0.013886 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Chair_lambert1_MetallicSmoothness.1001.tga
-  artifactKey: Guid(42915c1598a147141bb197c6d4302eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Chair_lambert1_MetallicSmoothness.1001.tga using Guid(42915c1598a147141bb197c6d4302eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b753a949f00661ef4aa0ab0443b5679') in 0.021819 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000536 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/lamp_lambert1_MetallicSmoothness.1001.tga
-  artifactKey: Guid(b33587904a0430d4e920d7bedaf4d6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/lamp_lambert1_MetallicSmoothness.1001.tga using Guid(b33587904a0430d4e920d7bedaf4d6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d99ddc01ca5d28d4028d29f7081c70f') in 0.024842 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000372 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Oven_lambert1_BaseMap.1001.tga
-  artifactKey: Guid(72dffd94bb3b9c54cbccdb69cfc76007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Oven_lambert1_BaseMap.1001.tga using Guid(72dffd94bb3b9c54cbccdb69cfc76007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd01eb771bb0c10f93231e5ea18ee22') in 0.017081 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Table_lambert1_AlbedoTransparency.1001.tga
-  artifactKey: Guid(5a945978b2d34e748a8ea216f3bdcdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Table_lambert1_AlbedoTransparency.1001.tga using Guid(5a945978b2d34e748a8ea216f3bdcdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aac2d3f2f0ba3e61401d362f9621ea79') in 0.020339 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgetop1_MaskMap.1001.tga
-  artifactKey: Guid(0aedac9e80e00c2478bbf2abc69468e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgetop1_MaskMap.1001.tga using Guid(0aedac9e80e00c2478bbf2abc69468e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c7c6900d45a77e0f630628e4566db46') in 0.020888 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000429 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Kitchen_lambert1_MaskMap.1001.tga
-  artifactKey: Guid(5a9d6959b7a95124d98244fe6a856bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Kitchen_lambert1_MaskMap.1001.tga using Guid(5a9d6959b7a95124d98244fe6a856bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4bb87fe6356fb5cc4511004cab2460c') in 0.027990 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/TableTV_lambert1_AlbedoTransparency.1001.tga
-  artifactKey: Guid(c6248f148d70d7542b1fab63ad5920d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/TableTV_lambert1_AlbedoTransparency.1001.tga using Guid(c6248f148d70d7542b1fab63ad5920d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567f3d9fb31753c3f283c400b807046d') in 0.023296 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/lamp_lambert1_AlbedoTransparency.1001.tga
-  artifactKey: Guid(28544cb825945214788c86892b93575a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/lamp_lambert1_AlbedoTransparency.1001.tga using Guid(28544cb825945214788c86892b93575a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '109d9b45ad0f4eb3e5ba054aaa97908c') in 0.016044 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgebot1_MaskMap.1001.tga
-  artifactKey: Guid(4dbc173b82b5f8c4caac042031254a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgebot1_MaskMap.1001.tga using Guid(4dbc173b82b5f8c4caac042031254a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7cd259976f60a2e1ce25628aa83766f') in 0.018105 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Wall_lambert1_BaseMap.1001.tga
-  artifactKey: Guid(a731a73f39109f746a7bcda8db674bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Wall_lambert1_BaseMap.1001.tga using Guid(a731a73f39109f746a7bcda8db674bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4151cffa3db8ef782c0afc729f706b30') in 0.016561 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000326 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/door_lambert1_BaseMap.1001.tga
-  artifactKey: Guid(2e33ea0876792084ab02cd3d3ad522b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/door_lambert1_BaseMap.1001.tga using Guid(2e33ea0876792084ab02cd3d3ad522b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff68b1d5ea032ee406ad74aa3170606') in 0.014371 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000373 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Kitchen_lambert1_BaseMap.1001.tga
-  artifactKey: Guid(ac90c97796b6747499570657c461d8f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Kitchen_lambert1_BaseMap.1001.tga using Guid(ac90c97796b6747499570657c461d8f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00cddfdc4e79a8d6fef77172498006be') in 0.014796 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Wall_lambert1_MaskMap.1001.tga
-  artifactKey: Guid(fec4a44d51803964081f14cc9868c523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Wall_lambert1_MaskMap.1001.tga using Guid(fec4a44d51803964081f14cc9868c523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '941cd30f9a626f3881682f8c2c4b93a0') in 0.019227 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/wineglass_lambert1_MetallicSmoothness.1001.tga
-  artifactKey: Guid(3a4a15b0dc37c964395dbc39df5eaa29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/wineglass_lambert1_MetallicSmoothness.1001.tga using Guid(3a4a15b0dc37c964395dbc39df5eaa29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '514b82eedb25fe1aca0d5f43e2ed77fb') in 0.016735 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Phone_lambert1_AlbedoTransparency.1001.tga
-  artifactKey: Guid(80e0c1bf3bf07af459e21181af16fb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Phone_lambert1_AlbedoTransparency.1001.tga using Guid(80e0c1bf3bf07af459e21181af16fb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c8fb9b278a3eb2fbfa46685e5a2dab') in 0.016447 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000326 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/wineglass_lambert1_AlbedoTransparency.1001.tga
-  artifactKey: Guid(76fda901594a9404f9cf9756fcbea696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/wineglass_lambert1_AlbedoTransparency.1001.tga using Guid(76fda901594a9404f9cf9756fcbea696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5a7c6d60c2bbd7752627355a389b6e') in 0.017343 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sofa_lambert1_BaseMap.1001.tga
-  artifactKey: Guid(b404a711ed2b74748ad658f1576be3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sofa_lambert1_BaseMap.1001.tga using Guid(b404a711ed2b74748ad658f1576be3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf9753f02d50877f4c8e5c3a4af1f265') in 0.017889 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Oven_lambert1_Normal.1001.tga
-  artifactKey: Guid(b620d776824c9934ab7880ab28e3bf3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Oven_lambert1_Normal.1001.tga using Guid(b620d776824c9934ab7880ab28e3bf3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99399ce2a728cd5a59f474be0ec79dc5') in 0.020152 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgetop1_Normal.1001.tga
-  artifactKey: Guid(095ed105d8c695645a15f4ce92f132b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgetop1_Normal.1001.tga using Guid(095ed105d8c695645a15f4ce92f132b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc9cfa4758ebf5629e790923a8786cd5') in 0.017705 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Table_lambert1_MetallicSmoothness.1001.tga
-  artifactKey: Guid(5157d17adc7d97c40bd4048d59db4413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Table_lambert1_MetallicSmoothness.1001.tga using Guid(5157d17adc7d97c40bd4048d59db4413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4676c8b730f35205446f954ffa48c59c') in 0.018104 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/window_lambert1_BaseMap.1001.tga
-  artifactKey: Guid(68e36c8c2997add4aabfc765b09226d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/window_lambert1_BaseMap.1001.tga using Guid(68e36c8c2997add4aabfc765b09226d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f5e071877e5353693889e6b9801e1e') in 0.015617 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Fridge_lambert1_MaskMap.1001.tga
-  artifactKey: Guid(09dce23656933c6488e31f8eda9d0e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Fridge_lambert1_MaskMap.1001.tga using Guid(09dce23656933c6488e31f8eda9d0e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52cee7c311209068c07af2b3171cc7ef') in 0.018563 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgeinterior_BaseMap.1001.tga
-  artifactKey: Guid(cfd2495778ceced4f86c8b6b093faaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgeinterior_BaseMap.1001.tga using Guid(cfd2495778ceced4f86c8b6b093faaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ad9b0f9bc3328a9d38a2560fbd5ae6c') in 0.019010 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000287 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Phone_lambert1_MetallicSmoothness.1001.tga
-  artifactKey: Guid(ca8d1e204e8d02647bbe1475fe72f530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Phone_lambert1_MetallicSmoothness.1001.tga using Guid(ca8d1e204e8d02647bbe1475fe72f530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69eb24c0a1dc5a1c98602dd233bf726c') in 0.014853 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/TV_lambert1_BaseMap.1001.tga
-  artifactKey: Guid(645399bd1adaf594ab87b1f07000229d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/TV_lambert1_BaseMap.1001.tga using Guid(645399bd1adaf594ab87b1f07000229d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b39f16be90a9c6a77cac9972852ef28e') in 0.015429 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Phone_lambert1_Normal.1001.tga
-  artifactKey: Guid(5d4062220a30bbf4ea22d3be5d3e7d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Phone_lambert1_Normal.1001.tga using Guid(5d4062220a30bbf4ea22d3be5d3e7d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c56e32cd53935e3e7f9bf7f8137bb716') in 0.014796 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Counter_lambert1_MaskMap.1001.tga
-  artifactKey: Guid(d64f059c3e13d2f49b51f4766522dc31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Counter_lambert1_MaskMap.1001.tga using Guid(d64f059c3e13d2f49b51f4766522dc31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992099f77733d47c09adde11d671b7bc') in 0.024365 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Shelf_lambert1_AlbedoTransparency.1001.tga
-  artifactKey: Guid(a86366384a84a3f4f8a071bcdb80cb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Shelf_lambert1_AlbedoTransparency.1001.tga using Guid(a86366384a84a3f4f8a071bcdb80cb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '783843b9badacbb984dfa0f206c6bb1d') in 0.023418 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000297 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/TableTV_lambert1_MetallicSmoothness.1001.tga
-  artifactKey: Guid(85d0ea6ffbcda5742859f860c373be38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/TableTV_lambert1_MetallicSmoothness.1001.tga using Guid(85d0ea6ffbcda5742859f860c373be38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20cb7ca58d0436a3a38436dc3ffc4bf2') in 0.012525 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000441 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/lamp_lambert1_Normal.1001.tga
-  artifactKey: Guid(53a068020e120be4fab44e4b52f3c004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/lamp_lambert1_Normal.1001.tga using Guid(53a068020e120be4fab44e4b52f3c004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579d489d4d2485f2e4fcfaba5866e6de') in 0.017702 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgeinterior_MaskMap.1001.tga
-  artifactKey: Guid(e87fca536307f3443ae3e3c7cc7f81c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgeinterior_MaskMap.1001.tga using Guid(e87fca536307f3443ae3e3c7cc7f81c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '731801b795a6bc60df5d9e9e6429a087') in 0.014215 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000286 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sofa_lambert1_MaskMap.1001.tga
-  artifactKey: Guid(169b6da668050e04cbb7ce2cd1cbbf6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sofa_lambert1_MaskMap.1001.tga using Guid(169b6da668050e04cbb7ce2cd1cbbf6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7894eeb2ddb2422e87fe668efc7951') in 0.016353 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Counter_lambert1_BaseMap.1001.tga
-  artifactKey: Guid(cce282adfd0547348b19487e9ba33c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Counter_lambert1_BaseMap.1001.tga using Guid(cce282adfd0547348b19487e9ba33c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '979d42b9b4662b1b05b267cc8549ee45') in 0.013614 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgetop1_BaseMap.1001.tga
-  artifactKey: Guid(ff044dc8df389ed47ad6ba4fbf3ccd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgetop1_BaseMap.1001.tga using Guid(ff044dc8df389ed47ad6ba4fbf3ccd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81bdf2dcff8717e4a30cc75979556fc3') in 0.016718 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000312 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Shelf_lambert1_Normal.1001.tga
-  artifactKey: Guid(9d82ef03a9412944f864e753e8ebe51f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Shelf_lambert1_Normal.1001.tga using Guid(9d82ef03a9412944f864e753e8ebe51f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73a519355462cbf413318f59d2eb55c0') in 0.015774 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Shelf_lambert1_MetallicSmoothness.1001.tga
-  artifactKey: Guid(cf58fcc7b4fe9bb42a01734caec43bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Shelf_lambert1_MetallicSmoothness.1001.tga using Guid(cf58fcc7b4fe9bb42a01734caec43bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9c8de21a7c6164b2ecdd375e94bcdd') in 0.016351 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000297 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgebot1_Normal.1001.tga
-  artifactKey: Guid(2f5fda0f9ad2ec04997ec3e6bbfb43c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Fridge_Fridgebot1_Normal.1001.tga using Guid(2f5fda0f9ad2ec04997ec3e6bbfb43c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1a263ac367a11ab65eda1f2b4bb2121') in 0.015268 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Oven_lambert1_MaskMap.1001.tga
-  artifactKey: Guid(17696dfc000047d488e98a00d817757c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Oven_lambert1_MaskMap.1001.tga using Guid(17696dfc000047d488e98a00d817757c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03de276eaffdbed66973af775a3cbdd') in 0.018629 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000288 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/TableTV_lambert1_Normal.1001.tga
-  artifactKey: Guid(2015a27925cde044c9da474bbdf59730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/TableTV_lambert1_Normal.1001.tga using Guid(2015a27925cde044c9da474bbdf59730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe789ba99f3b3bfc3f156a16fa8aa8d2') in 0.016631 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000286 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Chair_lambert1_Normal.1001.tga
-  artifactKey: Guid(03bedd7f8f17a0c49a55e6bfbaa75811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Chair_lambert1_Normal.1001.tga using Guid(03bedd7f8f17a0c49a55e6bfbaa75811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d48e3fb1f5f45aa829c72556d2cf8c0') in 0.015567 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Fridge_lambert1_BaseMap.1001.tga
-  artifactKey: Guid(bc497486445235c47941e21060c3e4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Fridge_lambert1_BaseMap.1001.tga using Guid(bc497486445235c47941e21060c3e4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d67cd5087c8f6ac5e19658832d510c') in 0.015837 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000330 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Kitchen_lambert1_Normal.1001.tga
-  artifactKey: Guid(39d7df056fda86448b1834c3a7637f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Kitchen_lambert1_Normal.1001.tga using Guid(39d7df056fda86448b1834c3a7637f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3a790452007228a530d745c26c0ca1') in 0.017607 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Fridge_lambert1_Normal.1001.tga
-  artifactKey: Guid(77e0778cea700374f8f40621749f6a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Fridge_lambert1_Normal.1001.tga using Guid(77e0778cea700374f8f40621749f6a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6c6e251277a13ea3610bdb1509b200d') in 0.016445 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000341 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/TV_lambert1_MaskMap.1001.tga
-  artifactKey: Guid(817e84106dd44a5479ba8a5de6ffc47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/TV_lambert1_MaskMap.1001.tga using Guid(817e84106dd44a5479ba8a5de6ffc47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '939153ac81a247e24c84cc9ba4fc390b') in 0.013520 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.995415 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sink2_lambert1_AlbedoTransparency.1001.tga
-  artifactKey: Guid(d530e2a69e62ec745a5a109cb7d775ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sink2_lambert1_AlbedoTransparency.1001.tga using Guid(d530e2a69e62ec745a5a109cb7d775ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33060c5121c4a7ec90563e1fd3a4f57') in 0.016668 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000398 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sink_lambert1_Normal.1001.tga
-  artifactKey: Guid(78b5e4a74cd8d7042aeb55558e0ad69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sink_lambert1_Normal.1001.tga using Guid(78b5e4a74cd8d7042aeb55558e0ad69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23251aa0861a1d2f7777e6a760c44183') in 0.019287 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sink2_lambert1_Normal.1001.tga
-  artifactKey: Guid(1a085b392f9792247ace7a65d423070a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sink2_lambert1_Normal.1001.tga using Guid(1a085b392f9792247ace7a65d423070a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94fb09f1b9fe4bd57744d9fde56b68e8') in 0.017609 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000578 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sink_lambert1_MetallicSmoothness.1001.tga
-  artifactKey: Guid(27d273a5ae681f643878328c2b6d84e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sink_lambert1_MetallicSmoothness.1001.tga using Guid(27d273a5ae681f643878328c2b6d84e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e684a38b00e90ee89d47fdf58e3460') in 0.020644 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sink_lambert1_AlbedoTransparency.1001.tga
-  artifactKey: Guid(a20aa6b0fcc57084492443aa4b9e126e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sink_lambert1_AlbedoTransparency.1001.tga using Guid(a20aa6b0fcc57084492443aa4b9e126e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f5be573b7e7cecb21d31224d22e8824') in 0.018992 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Sink2_lambert1_MetallicSmoothness.1001.tga
-  artifactKey: Guid(bbd5ef5781c1d1540a48840cadbe9d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Sink2_lambert1_MetallicSmoothness.1001.tga using Guid(bbd5ef5781c1d1540a48840cadbe9d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371c67dae188f100ef620cc39d9295a6') in 0.018055 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.324452 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_Normal.1001.tga
-  artifactKey: Guid(1b310ed5d30540f4c8d99c6ee00a16da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_Normal.1001.tga using Guid(1b310ed5d30540f4c8d99c6ee00a16da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '150f02b7c0be0c6d534e95600e361cf4') in 0.014275 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.201685 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_AlbedoTransparency.1001.tga
-  artifactKey: Guid(7a3208dd83bf097499963e524b373e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_AlbedoTransparency.1001.tga using Guid(7a3208dd83bf097499963e524b373e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccc8434bdf01f53bcf1b497c1e623639') in 0.014419 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_MetallicSmoothness.1001.tga
-  artifactKey: Guid(76677352e3d02ef458502b1951c807e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_MetallicSmoothness.1001.tga using Guid(76677352e3d02ef458502b1951c807e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e84f47c664d017de9698dd31e24bd0d') in 0.014682 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.826725 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_Normal.1001.tga
-  artifactKey: Guid(1b310ed5d30540f4c8d99c6ee00a16da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Textures/Pan_lambert1_Normal.1001.tga using Guid(1b310ed5d30540f4c8d99c6ee00a16da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0381ca90e870ac212cd03008965d70d') in 0.013204 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 67.575316 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Pan.mat
-  artifactKey: Guid(a601004201bd94e4d8c4247d66ccb103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Pan.mat using Guid(a601004201bd94e4d8c4247d66ccb103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34b3b73493be2eed37e0886cf3d4631') in 0.022895 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Sink2.mat
-  artifactKey: Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Sink2.mat using Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5921b4164ce205775954201025bfc2') in 0.023409 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/Sink.mat
-  artifactKey: Guid(b557146301c282548b8513aa694a341c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/Sink.mat using Guid(b557146301c282548b8513aa694a341c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4e9788037822be2b16717f2d9749e57') in 0.025657 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005221 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.Texture3DPreview:InitPreviewUtility ()
-UnityEditor.Texture3DPreview:OnEnable ()
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
-Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.Texture3DPreview:InitPreviewUtility ()
-UnityEditor.Texture3DPreview:OnEnable ()
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
-Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.Texture3DPreview:InitPreviewUtility ()
-UnityEditor.Texture3DPreview:OnEnable ()
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
-Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.Texture3DPreview:InitPreviewUtility ()
-UnityEditor.Texture3DPreview:OnEnable ()
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
-Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.Texture3DPreview:InitPreviewUtility ()
-UnityEditor.Texture3DPreview:OnEnable ()
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
-Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.Texture3DPreview:InitPreviewUtility ()
-UnityEditor.Texture3DPreview:OnEnable ()
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
-Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.Texture3DPreview:InitPreviewUtility ()
-UnityEditor.Texture3DPreview:OnEnable ()
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
-Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.Texture3DPreview:InitPreviewUtility ()
-UnityEditor.Texture3DPreview:OnEnable ()
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
-Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.Texture3DPreview:InitPreviewUtility ()
-UnityEditor.Texture3DPreview:OnEnable ()
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
-Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.Texture3DPreview:InitPreviewUtility ()
-UnityEditor.Texture3DPreview:OnEnable ()
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
-Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.Texture3DPreview:InitPreviewUtility ()
-UnityEditor.Texture3DPreview:OnEnable ()
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
-Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.Texture3DPreview:InitPreviewUtility ()
-UnityEditor.Texture3DPreview:OnEnable ()
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
-Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.Texture3DPreview:InitPreviewUtility ()
-UnityEditor.Texture3DPreview:OnEnable ()
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.635 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1635ms)
-		BeginReloadAssembly (172ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (1383ms)
-			LoadAssemblies (142ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (449ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (425ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (323ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (2ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (43ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3381 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 236.2 MB.
-System memory in use after: 236.4 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 5126.
-Total: 5.181900 ms (FindLiveObjects: 0.399600 ms CreateObjectMapping: 0.202400 ms MarkObjects: 4.471100 ms  DeleteObjects: 0.106900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 328.657310 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/pan.mat
-  artifactKey: Guid(a601004201bd94e4d8c4247d66ccb103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/pan.mat using Guid(a601004201bd94e4d8c4247d66ccb103) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.MaterialEditor:GetPreviewRendererUtility ()
-UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
- -> (artifact id: '2bce8798e9b45c8dc88669b67d3641b0') in 0.248196 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/sink.mat
-  artifactKey: Guid(aaa14922fc0b0c1439e08ab6159a2a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/sink.mat using Guid(aaa14922fc0b0c1439e08ab6159a2a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.MaterialEditor:GetPreviewRendererUtility ()
-UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
- -> (artifact id: '2f9114ef11d4205848d7c3f773674955') in 0.016466 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000290 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/sink2.mat
-  artifactKey: Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/sink2.mat using Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.MaterialEditor:GetPreviewRendererUtility ()
-UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
- -> (artifact id: '06b432ca442aec3341147e23587e61d3') in 0.015336 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 584.237364 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/sink.mat
-  artifactKey: Guid(aaa14922fc0b0c1439e08ab6159a2a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/sink.mat using Guid(aaa14922fc0b0c1439e08ab6159a2a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.MaterialEditor:GetPreviewRendererUtility ()
-UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
- -> (artifact id: '47a5223322dd46cddfe7fd1c7eb92377') in 0.016475 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Rosa/FinalAssets/Materials/sink2.mat
-  artifactKey: Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rosa/FinalAssets/Materials/sink2.mat using Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
-UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
-UnityEditor.PreviewScene:.ctor (string)
-UnityEditor.PreviewRenderUtility:.ctor ()
-UnityEditor.MaterialEditor:GetPreviewRendererUtility ()
-UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
-
- -> (artifact id: 'e7eb55e0454ea64c10afba293706993d') in 0.009717 seconds 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+Start importing Assets/Rosa/FinalAssets/Materials/Sink2.mat using Guid(618fd7082150a8342b61035888681e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50b379e7dcab12720723347a2ce71346') in 0.022551 seconds 

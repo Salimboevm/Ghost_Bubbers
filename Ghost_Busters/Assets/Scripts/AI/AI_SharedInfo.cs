@@ -38,13 +38,6 @@ public class AI_SharedInfo : MonoBehaviour
 
     private void Awake()
     {
-        DifficultySetter dS = DifficultySetter._instance;
-        if(dS != null)
-        {
-            _ammountOfGhosts = dS.GetNumOfGhosts();
-            _numberOfPossesableObjects = dS.GetNumOfGhosts();
-        }
-
         #region Singleton
         if (_instance == null)
             _instance = this;
@@ -52,9 +45,16 @@ public class AI_SharedInfo : MonoBehaviour
             Destroy(this);
         #endregion
 
+        DifficultySetter dS = DifficultySetter._instance;
+        if(dS != null)
+        {
+            _ammountOfGhosts = dS.GetNumOfGhosts();
+            _numberOfPossesableObjects = dS.GetNumOfGhosts();
+        }
+
         #region Setting up all lists
-        _objects = new List<PossessableObject>();
         _objectsGO = GameObject.FindGameObjectsWithTag("PossessableObject");
+        _objects = new List<PossessableObject>();
 
         _freeObjects = new List<PossessableObject>();
         _targetedObjects = new List<PossessableObject>();

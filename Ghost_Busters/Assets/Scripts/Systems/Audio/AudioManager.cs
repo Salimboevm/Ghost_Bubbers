@@ -120,4 +120,8 @@ public class AudioManager : MonoBehaviour
         }
     }
     #endregion
+
+    #region Get 1 Sound
+    public Sound GetSound(int id) { return _sounds[id]; } 
+    #endregion
 }

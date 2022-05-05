@@ -61,7 +61,6 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-
     #region Play/Stop Audio Functions
     /// <summary>
     /// Plays the sound with given name

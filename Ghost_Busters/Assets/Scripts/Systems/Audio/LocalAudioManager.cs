@@ -10,6 +10,10 @@ public class LocalAudioManager : AudioManager
         SetAudioSettings();
     }
 
+    /// <summary>
+    /// Adds a list of sounds which this local AM should do
+    /// </summary>
+    /// <param name="addedSounds"></param>
     public void AddSounds(List<Sound> addedSounds)
     {
         _sounds = new Sound[addedSounds.Count];

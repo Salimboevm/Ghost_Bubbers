@@ -5,4 +5,6 @@ using UnityEngine;
 public abstract class Possessable : MonoBehaviour
 {
     public abstract void Possess();
+
+    public abstract void Unpossess();
 }

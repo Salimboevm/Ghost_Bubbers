@@ -23,12 +23,15 @@ public class GhostShooter : WeaponTypes
     {
         //check and get camera, if not provided use main camera else use given one 
         _playerCamera = _playerCamera ? _playerCamera : Camera.main;
+
+        if (weaponController.WeaponTypes != WeaponTypesEnum.rifle)
+            return;
+        
         InputFromPlayer.Instance.GetShootButtonStarted(ShootGhost);
     }
     
     protected override void ShootGhost()
     {
-        if (weaponController.WeaponTypes != WeaponTypesEnum.rifle) return;
         if (_numberOfBulletsLeft.Equals(0)) return;
         OnShoot();
     }
@@ -49,4 +52,5 @@ public class GhostShooter : WeaponTypes
         projectileTransform.GetComponent<ProjectilePhysicsShoot>().Setup(shootingDirection);
         _numberOfBulletsLeft--;
     }
+    
 }

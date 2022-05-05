@@ -5,19 +5,13 @@ ModelImporter:
   internalIDToNameTable: []
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< Updated upstream
 <<<<<<< HEAD
-=======
->>>>>>> Stashed changes
   externalObjects: {}
 =======
 =======
 >>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5
-<<<<<<< Updated upstream
 =======
 >>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5
-=======
->>>>>>> Stashed changes
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -25,12 +19,9 @@ ModelImporter:
       name: lambert1
     second: {fileID: 2100000, guid: c13bdf433e501644f8d3f3dd6faa7fdc, type: 2}
 <<<<<<< HEAD
-<<<<<<< Updated upstream
 <<<<<<< HEAD
 >>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5
 =======
-=======
->>>>>>> Stashed changes
 >>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5
 =======
 >>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5

@@ -220,7 +220,7 @@ public class AIGhost : MonoBehaviour
                             Vector3 dirFromPlayer = transform.position - _playerGO.transform.position;
 
                             //Calculate the new position (with the direction from the Player to the Ghost)
-                            Vector3 newPos = transform.position + (dirFromPlayer.normalized * _fleeingRadius);
+                            Vector3 newPos = transform.position + (dirFromPlayer.normalized * _fleeingDistance);
 
                             //Rotate the direction of the Ghost to move
                             newPos = Quaternion.Euler(0, vRotation, 0) * newPos;

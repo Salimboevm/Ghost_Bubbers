@@ -21,7 +21,12 @@ public class AI_SharedInfo : MonoBehaviour
     [SerializeField] private GameObject _ghostPrefab;
     [SerializeField] private int _ammountOfGhosts = 3;
     [SerializeField] private Transform[] _ghostSpawnPositions;
-    [SerializeField] private List<AIGhost> _ghosts; 
+    [SerializeField] private List<AIGhost> _ghosts;
+
+    #region DevTools
+    [SerializeField] private bool _debug = false;
+    [SerializeField] private GameObject _directionCubeGO;
+    #endregion
     #endregion
 
     #region Unused
@@ -48,11 +53,9 @@ public class AI_SharedInfo : MonoBehaviour
         _targetedObjects = new List<PossessableObject>();
         _possessedObjects = new List<PossessableObject>();
 
-        _ghosts = new List<AIGhost>(); 
+        _ghosts = new List<AIGhost>();
         #endregion
 
-
-        
     }
 
     
@@ -213,12 +216,13 @@ public class AI_SharedInfo : MonoBehaviour
             ghost.SetID(i);
 
             _ghosts.Add(ghostGO.GetComponent<AIGhost>());
+
+            if (_debug)
+            {
+                GameObject directionCube = Instantiate(_directionCubeGO, ghostGO.transform.position, ghostGO.transform.rotation);
+                directionCube.GetComponent<TempDirectionCube>().SetGhost(ghost);
+            }
         }
-    }
-
-    public void AssignObjects()
-    {
-
     }
 
 

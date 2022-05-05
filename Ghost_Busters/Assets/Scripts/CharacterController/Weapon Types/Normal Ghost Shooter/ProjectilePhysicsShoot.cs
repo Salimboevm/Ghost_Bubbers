@@ -12,4 +12,27 @@ public class ProjectilePhysicsShoot : MonoBehaviour
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.velocity = shootDirection * moveSpeed;
     }
+    /// <summary>
+    /// check collision
+    /// </summary>
+    /// <param name="collision"></param>
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+    }
+    /// <summary>
+    /// function to solve puzzle 
+    /// when collides
+    /// </summary>
+    void SolvePuzzle()
+    {
+
+    }
+    /// <summary>
+    /// deals damage when collides
+    /// </summary>
+    void DealDamage()
+    {
+
+    }
 }

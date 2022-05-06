@@ -9,14 +9,11 @@ public class GhostShooter : WeaponTypes
     [SerializeField]
     private float _distance = 150f;
     [SerializeField]
-    private float _shootForce = 150f;
-    [SerializeField]
     private Camera _playerCamera;
     [SerializeField]
     private LayerMask _layerMask;
     [SerializeField]
     private Transform _shootPosition;
-    Vector3 _direction;
 
     [Header("Projectile Variables")]
     [SerializeField]
@@ -27,28 +24,33 @@ public class GhostShooter : WeaponTypes
         //check and get camera, if not provided use main camera else use given one 
         _playerCamera = _playerCamera ? _playerCamera : Camera.main;
 
-        
+        if (weaponController.WeaponTypes != WeaponTypesEnum.rifle)
+            return;
         
         InputFromPlayer.Instance.GetShootButtonStarted(ShootGhost);
     }
     
     protected override void ShootGhost()
     {
-        if (weaponController.WeaponTypes != WeaponTypesEnum.rifle)
-            return;
         if (_numberOfBulletsLeft.Equals(0)) return;
         OnShoot();
     }
+    Vector3 GetRaycastHitDirection()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(_shootPosition.position, _shootPosition.forward, out hit,_distance,_layerMask))
+        {
+            return hit.point;
+        }
+        return Vector3.zero;
+    }
     void OnShoot()
     {
-        if (GameManager.instance.GetIsGamePaused())
-            return;
         Transform projectileTransform = Instantiate(_projectile,_shootPosition.position, Quaternion.identity).transform;
-        RaycastHit hit;
-        if (Physics.Raycast(_shootPosition.transform.position, _playerCamera.transform.forward, out hit, Mathf.Infinity))
-        {
-            projectileTransform.GetComponent<Rigidbody>().AddForce(((hit.point - _shootPosition.position) * 10f), ForceMode.Impulse);
-        }
+        Vector3 shootingDirection = (GetRaycastHitDirection() - _shootPosition.position).normalized;
 
+        projectileTransform.GetComponent<ProjectilePhysicsShoot>().Setup(shootingDirection);
+        _numberOfBulletsLeft--;
     }
+    
 }

@@ -27,8 +27,6 @@ public class GlassesToFindPossessedItems : WeaponTypes
     /// </summary>
     protected override void RayGlassesToFindGhost()
     {
-        if (GameManager.instance.GetIsGamePaused())
-            return;
         //if there is no possesed objects do not run this code
         if (_possesedObjects.GetPossessedObjects().Count == 0)
             return;

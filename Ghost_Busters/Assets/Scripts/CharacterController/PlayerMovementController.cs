@@ -36,8 +36,6 @@ public class PlayerMovementController : MonoBehaviour
 
     private void PlayerMovement()
     {
-        if (GameManager.instance.GetIsGamePaused())
-            return;
         CheckPlayerIsGrounded();
         movement = playerInputInstance.GetPlayerMoveInput();
         Vector3 move = new Vector3(movement.x,0f,movement.y);

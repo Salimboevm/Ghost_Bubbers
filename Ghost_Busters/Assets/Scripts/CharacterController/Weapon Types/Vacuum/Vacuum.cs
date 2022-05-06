@@ -18,8 +18,6 @@ public class Vacuum : WeaponTypes
 
     protected override void VacuumGhost()
     {
-        if (GameManager.instance.GetIsGamePaused())
-            return;
         //throw vacuum and enable it
     }
     /// <summary>

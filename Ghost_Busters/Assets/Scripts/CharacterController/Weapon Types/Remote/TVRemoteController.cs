@@ -22,17 +22,15 @@ public class TVRemoteController : WeaponTypes
 
     void IncreaseCurrentChannelValue()
     {
-        if (GameManager.instance.GetIsGamePaused())
-            return;
         _currentChannel++;
         RemoteController();
+        Mathf.Clamp(_currentChannel, 0, 3);
     }
     void DecreaseCurrentChannelValue()
     {
-        if (GameManager.instance.GetIsGamePaused())
-            return;
         _currentChannel--;
         RemoteController();
+        Mathf.Clamp(_currentChannel, 0, 3);
         
     }
     protected override void RemoteController()

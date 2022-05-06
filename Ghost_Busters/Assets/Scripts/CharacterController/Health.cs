@@ -3,11 +3,11 @@ using System;
 public class Health : MonoBehaviour
 {
     [SerializeField]
-    private float _health;
-    private bool _isDead;
+    protected float _health;
+    protected bool _isDead;
     public Action<float> _dealDamageAction;
     private Action _deadAction;
-    private float HealthValue {
+    protected float HealthValue {
         
         set 
         { 
@@ -15,7 +15,7 @@ public class Health : MonoBehaviour
             _dealDamageAction(_health);
         } 
     }
-    private bool IsDead
+    protected bool IsDead
     {
         set
         {
@@ -23,7 +23,7 @@ public class Health : MonoBehaviour
             _deadAction();
         }
     }
-    private void Start()
+    protected void Start()
     {
         _dealDamageAction += DealDamage;
         _deadAction += CheckIsDead;
@@ -34,18 +34,33 @@ public class Health : MonoBehaviour
         CheckHealth();
         
     }
-    void CheckHealth() 
+    protected void CheckHealth() 
     {
         if (_health <= 0)
         {
             IsDead = true;
         }
     }
-    void CheckIsDead()
+    protected void CheckIsDead()
     {
-        print("hed");
+        print("Ded");
         if (_isDead)
         {
+            Debug.Log("Before Here");
+            int aliveCount = 0;
+            foreach (AIGhost ghost in AI_SharedInfo._instance.GetGhostList())
+            {
+                if (ghost != null)
+                {
+                    aliveCount += 1;
+                }
+            }
+
+            if (aliveCount == 1)
+            {
+                PauseMenu._instance.WinGame();
+            }
+
             Destroy(gameObject);
         }
     }

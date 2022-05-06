@@ -18,6 +18,8 @@ public class GhostShooter : WeaponTypes
     private Transform _shootPosition;
     Vector3 _direction;
 
+    [SerializeField] Transform _aimDot;
+
     [Header("Projectile Variables")]
     [SerializeField]
     private GameObject _projectile;
@@ -31,7 +33,14 @@ public class GhostShooter : WeaponTypes
         
         InputFromPlayer.Instance.GetShootButtonStarted(ShootGhost);
     }
-    
+    private void Update()
+    {
+        if(Physics.Raycast(_shootPosition.transform.position, _playerCamera.transform.forward, out RaycastHit hit, Mathf.Infinity))
+        {
+            _aimDot.position = hit.point;
+        }
+    }
+
     protected override void ShootGhost()
     {
         if (weaponController.WeaponTypes != WeaponTypesEnum.rifle)

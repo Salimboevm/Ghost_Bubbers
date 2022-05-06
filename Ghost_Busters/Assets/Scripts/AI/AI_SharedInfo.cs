@@ -100,6 +100,7 @@ public class AI_SharedInfo : MonoBehaviour
 
 
             chosenObjects.Add(random);
+            _objectsGO[random].GetComponent<Possessable>()._id = i;
             _objects.Add(new PossessableObject { _object = _objectsGO[random], _objectID = i });
         }
         #endregion
@@ -170,6 +171,9 @@ public class AI_SharedInfo : MonoBehaviour
         #region Assigning values
         PossessableObject possessedObject = _objects[objectID];
 
+        //possessedObject._object.GetComponent<Renderer>().material.color = Color.red;
+        possessedObject._object.GetComponent<Possessable>().Possess();
+
         possessedObject._possessed = true;
         possessedObject._ghostID = ghostID;
         #endregion
@@ -193,7 +197,10 @@ public class AI_SharedInfo : MonoBehaviour
 
         PossessableObject possessedObject = _objects[objectID];
         possessedObject._possessed = false;
-        //possessedObject._puzzleSolved = true; 
+        possessedObject._puzzleSolved = true;
+
+
+        possessedObject._object.GetComponent<Possessable>().Unpossess();
         #endregion
 
         #region Ghost Re-emerging

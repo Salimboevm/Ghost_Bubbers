@@ -81,6 +81,14 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""2ebfb5b1-0c13-4c4d-968c-dcd20ae1efd5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -215,6 +223,28 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
                     ""action"": ""UseGlasses"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2be290ea-cd5c-4546-8fe2-ff101c5e2e9e"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e2f8bb3b-8aab-4fc6-902e-bc1934a24a88"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -231,6 +261,7 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
         m_Player_ChannelIncrease = m_Player.FindAction("ChannelIncrease", throwIfNotFound: true);
         m_Player_DecreaseChannel = m_Player.FindAction("DecreaseChannel", throwIfNotFound: true);
         m_Player_UseGlasses = m_Player.FindAction("UseGlasses", throwIfNotFound: true);
+        m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -288,6 +319,7 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_ChannelIncrease;
     private readonly InputAction m_Player_DecreaseChannel;
     private readonly InputAction m_Player_UseGlasses;
+    private readonly InputAction m_Player_Pause;
     public struct PlayerActions
     {
         private @CharacterInputMaster m_Wrapper;
@@ -300,6 +332,7 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
         public InputAction @ChannelIncrease => m_Wrapper.m_Player_ChannelIncrease;
         public InputAction @DecreaseChannel => m_Wrapper.m_Player_DecreaseChannel;
         public InputAction @UseGlasses => m_Wrapper.m_Player_UseGlasses;
+        public InputAction @Pause => m_Wrapper.m_Player_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -333,6 +366,9 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
                 @UseGlasses.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnUseGlasses;
                 @UseGlasses.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnUseGlasses;
                 @UseGlasses.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnUseGlasses;
+                @Pause.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -361,6 +397,9 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
                 @UseGlasses.started += instance.OnUseGlasses;
                 @UseGlasses.performed += instance.OnUseGlasses;
                 @UseGlasses.canceled += instance.OnUseGlasses;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -375,5 +414,6 @@ public class @CharacterInputMaster : IInputActionCollection, IDisposable
         void OnChannelIncrease(InputAction.CallbackContext context);
         void OnDecreaseChannel(InputAction.CallbackContext context);
         void OnUseGlasses(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }

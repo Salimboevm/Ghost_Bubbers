@@ -13,6 +13,11 @@ public class ProjectilePhysicsShoot : MonoBehaviour
     [SerializeField]
     private string _puzzleTag;
 
+    private void Awake()
+    {
+        Destroy(gameObject, 10f);
+    }
+
     /// <summary>
     /// check collision
     /// </summary>
@@ -20,17 +25,16 @@ public class ProjectilePhysicsShoot : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         var collidingObject = collision.collider;
-        print(collision.collider.tag);
-        if(collidingObject.CompareTag(_ghostTag))
+        //print(collision.collider.tag);
+        if(collidingObject.CompareTag("Ghost"))
         {
             DealDamage(collidingObject.GetComponent<Health>(), _damageValue);
-            Destroy(gameObject);
         }   
-        else if (collidingObject.CompareTag(_puzzleTag))
+        else if (collidingObject.CompareTag("PossessableObject"))
         {
-            SolvePuzzle(collidingObject.GetComponent<PossessableObject>()._objectID);
+            collidingObject.GetComponent<HealthObject>().TakeDamage(_damageValue);
         }
-        Destroy(gameObject,10f);
+        Destroy(gameObject);
     }
     /// <summary>
     /// function to solve puzzle 

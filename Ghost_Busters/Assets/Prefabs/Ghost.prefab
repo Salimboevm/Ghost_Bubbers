@@ -115,7 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _runAwayDistance: 6
   _avoidanceRunAwayDistance: 1.5
-  _fleeingDistance: 6
+  _fleeingRadius: 6
   _possessableDistance: 0.4
 --- !u!114 &1537373102324723489
 MonoBehaviour:
@@ -140,6 +140,7 @@ MonoBehaviour:
     _rolloffMode: 0
     _source: {fileID: 0}
     _loop: 0
+    _playOnAwake: 0
     _ignoreAudioListenerPause: 0
   - _name: GetMe
     _group: {fileID: 5947359006763750383, guid: 3ec6aa670de59994a98dc6248a755636, type: 2}
@@ -151,6 +152,7 @@ MonoBehaviour:
     _rolloffMode: 0
     _source: {fileID: 0}
     _loop: 0
+    _playOnAwake: 0
     _ignoreAudioListenerPause: 0
   - _name: Laugh
     _group: {fileID: 5947359006763750383, guid: 3ec6aa670de59994a98dc6248a755636, type: 2}
@@ -162,6 +164,7 @@ MonoBehaviour:
     _rolloffMode: 0
     _source: {fileID: 0}
     _loop: 0
+    _playOnAwake: 0
     _ignoreAudioListenerPause: 0
   - _name: Death
     _group: {fileID: 5947359006763750383, guid: 3ec6aa670de59994a98dc6248a755636, type: 2}
@@ -173,6 +176,7 @@ MonoBehaviour:
     _rolloffMode: 0
     _source: {fileID: 0}
     _loop: 0
+    _playOnAwake: 0
     _ignoreAudioListenerPause: 0
 --- !u!195 &5216970493130678599
 NavMeshAgent:

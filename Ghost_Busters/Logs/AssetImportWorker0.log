@@ -16,17 +16,23 @@ C:/Users/JBlackCZ/Documents/GitHub/Ghost_Bubbers2/Ghost_Busters
 Logs/AssetImportWorker0.log
 -srvPort
 <<<<<<< HEAD
+<<<<<<< HEAD
 10040
 Successfully changed project path to: C:/Users/JBlackCZ/Documents/GitHub/Ghost_Bubbers2/Ghost_Busters
 C:/Users/JBlackCZ/Documents/GitHub/Ghost_Bubbers2/Ghost_Busters
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 82.94 ms, found 2 plugins.
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 2653
 Successfully changed project path to: C:/Users/JBlackCZ/Documents/GitHub/Ghost_Bubbers2/Ghost_Busters
 C:/Users/JBlackCZ/Documents/GitHub/Ghost_Bubbers2/Ghost_Busters
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 76.97 ms, found 2 plugins.
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.19f1 (5f5eb8bbdc25)
@@ -44,7 +50,11 @@ Mono path[0] = 'F:/Unity/Installs/2021.1.19f1/Editor/Data/Managed'
 Mono path[1] = 'F:/Unity/Installs/2021.1.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'F:/Unity/Installs/2021.1.19f1/Editor/Data/MonoBleedingEdge/etc'
 <<<<<<< HEAD
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56760
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
+>>>>>>> parent of 7654dd3 (pause menu)
 =======
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
 >>>>>>> parent of 7654dd3 (pause menu)
@@ -52,6 +62,7 @@ Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: F:/Unity/Installs/2021.1.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: F:/Unity/Installs/2021.1.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+<<<<<<< HEAD
 <<<<<<< HEAD
 Registered in 0.002393 seconds.
 Native extension for WindowsStandalone target not found
@@ -64,6 +75,8 @@ Domain Reload Profiling:
 	ReloadAssembly (3348ms)
 		BeginReloadAssembly (117ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 Registered in 0.002389 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
@@ -74,12 +87,16 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (3224ms)
 		BeginReloadAssembly (121ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 		EndReloadAssembly (513ms)
 			LoadAssemblies (117ms)
@@ -95,6 +112,8 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (2ms)
 				ProcessInitializeOnLoadAttributes (114ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 		EndReloadAssembly (494ms)
 			LoadAssemblies (121ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -108,6 +127,9 @@ Domain Reload Profiling:
 				RefreshPlugins (77ms)
 				BeforeProcessingInitializeOnLoad (2ms)
 				ProcessInitializeOnLoadAttributes (111ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (0ms)
@@ -116,6 +138,7 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 <<<<<<< HEAD
 Registered in 0.007979 seconds.
 Begin MonoManager ReloadAssembly
@@ -129,6 +152,8 @@ Domain Reload Profiling:
 	ReloadAssembly (1475ms)
 		BeginReloadAssembly (217ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 Registered in 0.006519 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -140,12 +165,16 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1420ms)
 		BeginReloadAssembly (218ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (21ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 		EndReloadAssembly (1185ms)
 			LoadAssemblies (173ms)
@@ -161,6 +190,8 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (91ms)
 				ProcessInitializeOnLoadAttributes (315ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 		EndReloadAssembly (1135ms)
 			LoadAssemblies (170ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -174,11 +205,15 @@ Domain Reload Profiling:
 				RefreshPlugins (77ms)
 				BeforeProcessingInitializeOnLoad (85ms)
 				ProcessInitializeOnLoadAttributes (300ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
@@ -194,6 +229,8 @@ System memory in use after: 163.9 MB.
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4116.
 Total: 4.335600 ms (FindLiveObjects: 0.321200 ms CreateObjectMapping: 0.095700 ms MarkObjects: 3.793900 ms  DeleteObjects: 0.123000 ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
@@ -207,6 +244,9 @@ System memory in use after: 158.3 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3958.
 Total: 4.361900 ms (FindLiveObjects: 0.336800 ms CreateObjectMapping: 0.093100 ms MarkObjects: 3.808800 ms  DeleteObjects: 0.121600 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -222,6 +262,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
 <<<<<<< HEAD
   path: Assets/Scenes/MainMenu.unity
   artifactKey: Guid(b80b9aeccb2d3b14eb4c32c29d9e417f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -241,6 +282,8 @@ Domain Reload Profiling:
 	ReloadAssembly (1347ms)
 		BeginReloadAssembly (199ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
   path: Assets/Scripts/UI
   artifactKey: Guid(199a98e8171c9ed43b8d205256f856a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/UI using Guid(199a98e8171c9ed43b8d205256f856a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'becb2ca0bab3a2ac106046ed5198c289') in 0.008784 seconds 
@@ -316,11 +359,15 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1492ms)
 		BeginReloadAssembly (266ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 			CreateAndSetChildDomain (43ms)
 		EndReloadAssembly (1062ms)
@@ -331,6 +378,8 @@ Domain Reload Profiling:
 			RebuildScriptCaches (50ms)
 			SetupLoadedEditorAssemblies (378ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 			CreateAndSetChildDomain (64ms)
 		EndReloadAssembly (1146ms)
 			LoadAssemblies (212ms)
@@ -339,11 +388,15 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (2ms)
 			RebuildScriptCaches (54ms)
 			SetupLoadedEditorAssemblies (354ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 				BeforeProcessingInitializeOnLoad (72ms)
 				ProcessInitializeOnLoadAttributes (291ms)
@@ -432,6 +485,8 @@ System memory in use after: 153.6 MB.
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 4122.
 Total: 4.797300 ms (FindLiveObjects: 0.368200 ms CreateObjectMapping: 0.096100 ms MarkObjects: 4.223800 ms  DeleteObjects: 0.107500 ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 				BeforeProcessingInitializeOnLoad (70ms)
 				ProcessInitializeOnLoadAttributes (269ms)
 				ProcessInitializeOnLoadMethodAttributes (4ms)
@@ -448,6 +503,9 @@ System memory in use after: 148.1 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3961.
 Total: 5.895000 ms (FindLiveObjects: 0.426500 ms CreateObjectMapping: 0.121400 ms MarkObjects: 5.238400 ms  DeleteObjects: 0.106600 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -462,6 +520,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< HEAD
 <<<<<<< HEAD
 Received Import Request.
   Time since last request: 159.518799 seconds.
@@ -483,6 +542,8 @@ Domain Reload Profiling:
 	ReloadAssembly (1453ms)
 		BeginReloadAssembly (204ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.006358 seconds.
@@ -496,12 +557,16 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1333ms)
 		BeginReloadAssembly (203ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (42ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 		EndReloadAssembly (1179ms)
 			LoadAssemblies (191ms)
@@ -517,6 +582,8 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (76ms)
 				ProcessInitializeOnLoadAttributes (318ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 		EndReloadAssembly (1047ms)
 			LoadAssemblies (182ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -530,6 +597,9 @@ Domain Reload Profiling:
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (70ms)
 				ProcessInitializeOnLoadAttributes (283ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (3ms)
@@ -537,6 +607,7 @@ Domain Reload Profiling:
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
+<<<<<<< HEAD
 <<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -547,6 +618,8 @@ System memory in use after: 153.7 MB.
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 4125.
 Total: 4.704800 ms (FindLiveObjects: 0.407300 ms CreateObjectMapping: 0.097000 ms MarkObjects: 4.102600 ms  DeleteObjects: 0.095900 ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3359 Unused Serialized files (Serialized files now loaded: 0)
@@ -555,6 +628,9 @@ System memory in use after: 148.2 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3964.
 Total: 4.912000 ms (FindLiveObjects: 0.314000 ms CreateObjectMapping: 0.600600 ms MarkObjects: 3.899900 ms  DeleteObjects: 0.096200 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -569,6 +645,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< HEAD
 <<<<<<< HEAD
 Received Import Request.
   Time since last request: 252.301610 seconds.
@@ -644,6 +721,8 @@ Domain Reload Profiling:
 			RebuildScriptCaches (55ms)
 			SetupLoadedEditorAssemblies (392ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.011171 seconds.
@@ -669,14 +748,22 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (47ms)
 			SetupLoadedEditorAssemblies (355ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				BeforeProcessingInitializeOnLoad (74ms)
 				ProcessInitializeOnLoadAttributes (302ms)
+=======
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (269ms)
+>>>>>>> parent of 7654dd3 (pause menu)
 =======
 				BeforeProcessingInitializeOnLoad (70ms)
 				ProcessInitializeOnLoadAttributes (269ms)
@@ -685,6 +772,7 @@ Domain Reload Profiling:
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 			AwakeInstancesAfterBackupRestoration (23ms)
 Platform modules already initialized, skipping
@@ -697,6 +785,8 @@ System memory in use after: 164.3 MB.
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 4336.
 Total: 4.490800 ms (FindLiveObjects: 0.333400 ms CreateObjectMapping: 0.091400 ms MarkObjects: 3.973200 ms  DeleteObjects: 0.091100 ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
@@ -707,6 +797,9 @@ System memory in use after: 148.2 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3967.
 Total: 5.706200 ms (FindLiveObjects: 0.476800 ms CreateObjectMapping: 0.116400 ms MarkObjects: 4.998500 ms  DeleteObjects: 0.113200 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -724,8 +817,11 @@ AssetImportParameters requested are different than current active one (requested
 Received Prepare
 Registering precompiled user dll's ...
 <<<<<<< HEAD
+<<<<<<< HEAD
 Registered in 0.007704 seconds.
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 Registered in 0.006899 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -971,6 +1067,9 @@ AssetImportParameters requested are different than current active one (requested
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.006254 seconds.
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -978,6 +1077,7 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 <<<<<<< HEAD
 - Completed reload, in  1.405 seconds
 Domain Reload Profiling:
@@ -996,6 +1096,8 @@ Domain Reload Profiling:
 			RebuildScriptCaches (54ms)
 			SetupLoadedEditorAssemblies (391ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 - Completed reload, in  1.245 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1246ms)
@@ -1070,6 +1172,9 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (46ms)
 			SetupLoadedEditorAssemblies (412ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
@@ -1077,7 +1182,11 @@ Domain Reload Profiling:
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (82ms)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				ProcessInitializeOnLoadAttributes (294ms)
+=======
+				ProcessInitializeOnLoadAttributes (315ms)
+>>>>>>> parent of 7654dd3 (pause menu)
 =======
 				ProcessInitializeOnLoadAttributes (315ms)
 >>>>>>> parent of 7654dd3 (pause menu)
@@ -1085,6 +1194,7 @@ Domain Reload Profiling:
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 			AwakeInstancesAfterBackupRestoration (20ms)
 Platform modules already initialized, skipping
@@ -1097,6 +1207,8 @@ System memory in use after: 167.3 MB.
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 4439.
 Total: 4.336300 ms (FindLiveObjects: 0.372800 ms CreateObjectMapping: 0.096900 ms MarkObjects: 3.756000 ms  DeleteObjects: 0.109300 ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
@@ -1107,6 +1219,9 @@ System memory in use after: 148.3 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3986.
 Total: 4.371600 ms (FindLiveObjects: 0.296300 ms CreateObjectMapping: 0.087800 ms MarkObjects: 3.872800 ms  DeleteObjects: 0.113100 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1121,6 +1236,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< HEAD
 <<<<<<< HEAD
 Received Import Request.
   Time since last request: 168.083350 seconds.
@@ -1202,6 +1318,8 @@ Domain Reload Profiling:
 			RebuildScriptCaches (52ms)
 			SetupLoadedEditorAssemblies (395ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.006237 seconds.
@@ -1227,14 +1345,22 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (50ms)
 			SetupLoadedEditorAssemblies (367ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				BeforeProcessingInitializeOnLoad (84ms)
 				ProcessInitializeOnLoadAttributes (295ms)
+=======
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (278ms)
+>>>>>>> parent of 7654dd3 (pause menu)
 =======
 				BeforeProcessingInitializeOnLoad (73ms)
 				ProcessInitializeOnLoadAttributes (278ms)
@@ -1243,6 +1369,7 @@ Domain Reload Profiling:
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 			AwakeInstancesAfterBackupRestoration (23ms)
 Platform modules already initialized, skipping
@@ -1255,6 +1382,8 @@ System memory in use after: 170.9 MB.
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 4570.
 Total: 4.939200 ms (FindLiveObjects: 0.388400 ms CreateObjectMapping: 0.102000 ms MarkObjects: 4.330400 ms  DeleteObjects: 0.117000 ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
@@ -1323,6 +1452,9 @@ System memory in use after: 148.3 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3992.
 Total: 4.488000 ms (FindLiveObjects: 0.362300 ms CreateObjectMapping: 0.091300 ms MarkObjects: 3.935800 ms  DeleteObjects: 0.097100 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1338,6 +1470,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
 <<<<<<< HEAD
   Time since last request: 549.093191 seconds.
   path: Assets/Images/GhostButton 1.png
@@ -1388,6 +1521,8 @@ Domain Reload Profiling:
 			RebuildScriptCaches (58ms)
 			SetupLoadedEditorAssemblies (431ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
   Time since last request: 308.098294 seconds.
   path: Assets/Scenes/GameplayScene.unity
   artifactKey: Guid(4f004c8b9438fbc48ba14f72f7b7eb28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -1494,15 +1629,21 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (50ms)
 			SetupLoadedEditorAssemblies (352ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				BeforeProcessingInitializeOnLoad (88ms)
 				ProcessInitializeOnLoadAttributes (327ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 				BeforeProcessingInitializeOnLoad (69ms)
 				ProcessInitializeOnLoadAttributes (268ms)
 				ProcessInitializeOnLoadMethodAttributes (4ms)
@@ -1569,11 +1710,15 @@ Domain Reload Profiling:
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (70ms)
 				ProcessInitializeOnLoadAttributes (290ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 			AwakeInstancesAfterBackupRestoration (24ms)
 Platform modules already initialized, skipping
@@ -1586,6 +1731,8 @@ System memory in use after: 172.6 MB.
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 4631.
 Total: 5.796700 ms (FindLiveObjects: 0.536700 ms CreateObjectMapping: 0.242000 ms MarkObjects: 4.907500 ms  DeleteObjects: 0.108600 ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
@@ -1730,6 +1877,9 @@ System memory in use after: 148.4 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4007.
 Total: 4.231700 ms (FindLiveObjects: 0.307900 ms CreateObjectMapping: 0.085900 ms MarkObjects: 3.751000 ms  DeleteObjects: 0.085900 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1747,8 +1897,11 @@ AssetImportParameters requested are different than current active one (requested
 Received Prepare
 Registering precompiled user dll's ...
 <<<<<<< HEAD
+<<<<<<< HEAD
 Registered in 0.007808 seconds.
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 Registered in 0.006596 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -2372,6 +2525,9 @@ Start importing Assets/Scripts/Systems/Gameplay/Puzzle.cs using Guid(60e8cbb0736
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.010209 seconds.
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -2379,6 +2535,7 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 <<<<<<< HEAD
 - Completed reload, in  1.639 seconds
 Domain Reload Profiling:
@@ -2417,6 +2574,8 @@ System memory in use after: 172.6 MB.
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 4634.
 Total: 4.897000 ms (FindLiveObjects: 0.356100 ms CreateObjectMapping: 0.097200 ms MarkObjects: 4.327400 ms  DeleteObjects: 0.114800 ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 - Completed reload, in  1.471 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1472ms)
@@ -2453,6 +2612,9 @@ System memory in use after: 148.5 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4041.
 Total: 4.362100 ms (FindLiveObjects: 0.498500 ms CreateObjectMapping: 0.105400 ms MarkObjects: 3.670100 ms  DeleteObjects: 0.086200 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -2469,6 +2631,7 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Import Request.
 <<<<<<< HEAD
+<<<<<<< HEAD
   Time since last request: 994.924893 seconds.
   path: Assets/Images/GhostButton 1.png
   artifactKey: Guid(61290b819f58f0e43b1307c2c41c63fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -2484,6 +2647,8 @@ Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.007498 seconds.
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
   Time since last request: 8.690848 seconds.
   path: Assets/Scripts/Systems/Gameplay/Puzzle.cs
   artifactKey: Guid(60e8cbb0736237d458d12721bceafdde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -3318,6 +3483,9 @@ AssetImportParameters requested are different than current active one (requested
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.006448 seconds.
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -3325,6 +3493,7 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 <<<<<<< HEAD
 - Completed reload, in  1.438 seconds
 Domain Reload Profiling:
@@ -3343,6 +3512,8 @@ Domain Reload Profiling:
 			RebuildScriptCaches (52ms)
 			SetupLoadedEditorAssemblies (397ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 - Completed reload, in  1.324 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1325ms)
@@ -3359,11 +3530,15 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (48ms)
 			SetupLoadedEditorAssemblies (378ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 				BeforeProcessingInitializeOnLoad (84ms)
 				ProcessInitializeOnLoadAttributes (297ms)
@@ -3382,6 +3557,8 @@ System memory in use after: 173.4 MB.
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 4666.
 Total: 4.513500 ms (FindLiveObjects: 0.400100 ms CreateObjectMapping: 0.096500 ms MarkObjects: 3.907900 ms  DeleteObjects: 0.107000 ms)
 =======
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 				BeforeProcessingInitializeOnLoad (78ms)
 				ProcessInitializeOnLoadAttributes (284ms)
 				ProcessInitializeOnLoadMethodAttributes (6ms)
@@ -3398,6 +3575,9 @@ System memory in use after: 155.3 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4162.
 Total: 4.137800 ms (FindLiveObjects: 0.323900 ms CreateObjectMapping: 0.090200 ms MarkObjects: 3.632000 ms  DeleteObjects: 0.090200 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 7654dd3 (pause menu)
+=======
 >>>>>>> parent of 7654dd3 (pause menu)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -3412,6 +3592,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 <<<<<<< HEAD
+<<<<<<< HEAD
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 =======
 >>>>>>> parent of 7654dd3 (pause menu)

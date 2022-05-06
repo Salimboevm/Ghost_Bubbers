@@ -29,6 +29,7 @@ public class Sound
     [HideInInspector]
     public AudioSource _source;
 
-    public bool _loop;
-    public bool _ignoreAudioListenerPause;
+    public bool _loop = false;
+    public bool _playOnAwake = false;
+    public bool _ignoreAudioListenerPause = false;
 }

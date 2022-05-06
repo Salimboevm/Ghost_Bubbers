@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TV : Possessable
+public class TV : MonoBehaviour
 {
-    [SerializeField] private GameObject staticScreen;
-
-    public override void Possess()
+    // Start is called before the first frame update
+    void Start()
     {
-        staticScreen.SetActive(true);
+        
     }
 
-    public override void Unossess()
+    // Update is called once per frame
+    void Update()
     {
-        staticScreen.SetActive(false);
+        
     }
 }

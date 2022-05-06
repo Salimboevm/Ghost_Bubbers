@@ -897,6 +897,7 @@ GameObject:
   - component: {fileID: 1004942312}
   - component: {fileID: 1004942311}
   - component: {fileID: 1004942310}
+  - component: {fileID: 1004942309}
   m_Layer: 0
   m_Name: TestPlayer
   m_TagString: Player
@@ -904,6 +905,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!81 &1004942309
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004942308}
+  m_Enabled: 1
 --- !u!136 &1004942310
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1885,7 +1894,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1969526654}
   - component: {fileID: 1969526653}
-  - component: {fileID: 1969526652}
   - component: {fileID: 1969526655}
   m_Layer: 0
   m_Name: Main Camera
@@ -1894,14 +1902,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1969526652
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969526651}
-  m_Enabled: 1
 --- !u!20 &1969526653
 Camera:
   m_ObjectHideFlags: 0

@@ -30,7 +30,7 @@ public class SettingsMenu : MonoBehaviour
     private float _masterVolume;
     private float _musicVolume;
     private float _sfxVolume;
-    private Resolution _chosenResolution; 
+    private Resolution _chosenResolution;
     #endregion
 
 
@@ -90,7 +90,7 @@ public class SettingsMenu : MonoBehaviour
                 #region Set FullScreen
                 //set Fullscreen
                 _fullscreen.isOn = saveSettings.fullscreen;
-                SetFullscreen(); 
+                SetFullscreen();
                 #endregion
             }
             #endregion
@@ -98,7 +98,7 @@ public class SettingsMenu : MonoBehaviour
             else if (_resolutions[i].width == Screen.currentResolution.width && _resolutions[i].height == Screen.currentResolution.height)
             {
                 currentResolutionIndex = i;
-            } 
+            }
             #endregion
         }
         #endregion
@@ -115,7 +115,7 @@ public class SettingsMenu : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             _audioSliders[i].minValue = -_minVolume;
-        } 
+        }
         #endregion
 
     }
@@ -225,6 +225,6 @@ public class SettingsMenu : MonoBehaviour
         public bool fullscreen;
         public int resolutionWidth;
         public int resolutionHeight;
-    } 
+    }
     #endregion
 }

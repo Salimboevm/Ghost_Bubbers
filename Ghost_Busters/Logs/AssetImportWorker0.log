@@ -114,6 +114,7 @@ Platform modules already initialized, skipping
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
 Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+<<<<<<< Updated upstream
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3794 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 167.8 MB.
@@ -364,6 +365,15 @@ System memory in use after: 156.9 MB.
 
 Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 4226.
 Total: 4.726000 ms (FindLiveObjects: 0.340100 ms CreateObjectMapping: 0.098600 ms MarkObjects: 4.133900 ms  DeleteObjects: 0.152200 ms)
+=======
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3794 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 167.8 MB.
+System memory in use after: 168.0 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4251.
+Total: 4.805800 ms (FindLiveObjects: 0.625400 ms CreateObjectMapping: 0.186600 ms MarkObjects: 3.870100 ms  DeleteObjects: 0.121400 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -377,6 +387,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< Updated upstream
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.011877 seconds.
@@ -435,3 +446,15 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+=======
+Received Import Request.
+  path: Assets/Scenes/GameplayScene.unity
+  artifactKey: Guid(4f004c8b9438fbc48ba14f72f7b7eb28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GameplayScene.unity using Guid(4f004c8b9438fbc48ba14f72f7b7eb28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a39e3f6825609eadc1b967e06388bdab') in 0.030964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.683978 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(b80b9aeccb2d3b14eb4c32c29d9e417f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(b80b9aeccb2d3b14eb4c32c29d9e417f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb5273f20f23c9ee63a3c4b70dd7dcb') in 0.004064 seconds 
+>>>>>>> Stashed changes

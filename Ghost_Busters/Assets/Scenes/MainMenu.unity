@@ -272,8 +272,8 @@ MonoBehaviour:
     _clip: {fileID: 8300000, guid: 394e5a52d14bffd47bbefbf3655b7af4, type: 3}
     _volume: 1
     _pitch: 1
-    _spatialBlend: 1
-    _maxDistance: 0
+    _spatialBlend: 0
+    _maxDistance: 100
     _rolloffMode: 0
     _source: {fileID: 0}
     _loop: 0
@@ -7758,18 +7758,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 6797149293892722233}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ButtonSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!224 &6797149295400738057
 RectTransform:

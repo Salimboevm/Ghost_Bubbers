@@ -28,7 +28,6 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         #endregion
 
-
         #region Sets each sound's properties
         SetAudioSettings();
         #endregion
@@ -56,6 +55,7 @@ public class AudioManager : MonoBehaviour
             //AudioValues
             s._source.volume = s._volume;
             s._source.pitch = s._pitch;
+            s._source.playOnAwake = s._playOnAwake;
             s._source.loop = s._loop;
             s._source.ignoreListenerPause = s._ignoreAudioListenerPause;
         }
@@ -73,6 +73,9 @@ public class AudioManager : MonoBehaviour
         if (s == null) { Debug.LogError("No sound with the name '" + name + "' was found"); return; }
 
         s._source.Play();
+
+
+        Debug.Log("Song '" + name + "' is played now");
     }
 
     /// <summary>
@@ -86,6 +89,8 @@ public class AudioManager : MonoBehaviour
         if (s == null) { Debug.LogError("No sound with the name '" + name + "' was found"); return; }
 
         s._source.Stop();
+
+        Debug.Log("Song '" + name + "' is stopped now");
     }
 
     /// <summary>
@@ -99,6 +104,8 @@ public class AudioManager : MonoBehaviour
         if (s == null) { Debug.LogError("No sound with the name '" + name + "' was found"); return; }
 
         s._source.PlayOneShot(s._source.clip);
+
+        Debug.Log("Sound '" + name + "' was played now");
     } 
 
     /// <summary>

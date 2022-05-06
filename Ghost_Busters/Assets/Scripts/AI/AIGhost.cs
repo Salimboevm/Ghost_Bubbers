@@ -35,7 +35,6 @@ public class AIGhost : MonoBehaviour
     [SerializeField] private float _possessableDistance = 2f; // Distance from which a ghost can possess an object
     #endregion
 
-
     private int _id = 0;
 
     #region navigation variables
@@ -72,13 +71,13 @@ public class AIGhost : MonoBehaviour
     }
     #endregion
 
+
     #region Making sure everything works
     private void OnEnable()
     {
         _idleWalking = false;
     } 
     #endregion
-
 
     void Update()
     {

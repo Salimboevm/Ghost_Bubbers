@@ -25,9 +25,9 @@ public class Poke : MonoBehaviour
 
     private void OnPull(InputAction.CallbackContext obj)
     {
-        if (Physics.Raycast(transform.position, transform.forward, out hit) && hit.collider.gameObject.GetComponent<Possessable>())
+        if (Physics.Raycast(transform.position, transform.forward, out hit) && hit.collider.tag == "PhysObject")
         {
-            hit.collider.gameObject.GetComponent<Possessable>().Unpossess();
+            hit.collider.GetComponent<Rigidbody>().AddForce(-transform.forward * force, ForceMode.Impulse);
         }
     }
 

@@ -3,15 +3,6 @@ guid: 033a9af69441bdb45ac0fe1e3086e81e
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  externalObjects: {}
-=======
-=======
->>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5
-=======
->>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -22,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Fridgeinterior
-    second: {fileID: 2100000, guid: 29b6f3836bffaaf4aa40eadbb7a5ab23, type: 2}
+    second: {fileID: 2100000, guid: 8e86aec853bca08449c67c7ff75c6bdf, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -33,13 +24,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: lambert1
     second: {fileID: 2100000, guid: 29b6f3836bffaaf4aa40eadbb7a5ab23, type: 2}
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5
-=======
->>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5
-=======
->>>>>>> da6480e8652e7785cf48d61d5627deed790c66a5
   materials:
     materialImportMode: 2
     materialName: 0

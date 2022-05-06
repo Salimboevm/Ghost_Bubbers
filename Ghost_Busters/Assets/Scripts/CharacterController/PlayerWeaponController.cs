@@ -37,6 +37,8 @@ public class PlayerWeaponController : MonoBehaviour
     }
     void ChangeWeapon()
     {
+        if (GameManager.instance.GetIsGamePaused())
+            return;
         weapons[weaponNumber].SetActive(false);//deactivate current weapon
         CheckAndCalculateWeaponNumber();//calculate weapon number
         currentWeapon = weapons[weaponNumber];//change current weapon

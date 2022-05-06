@@ -11,9 +11,14 @@ public class CinemachinePOVExtension : CinemachineExtension
 
 
     private Vector3 startingRotation;
-
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     protected override void PostPipelineStageCallback(CinemachineVirtualCameraBase vcam, CinemachineCore.Stage stage, ref CameraState state, float deltaTime)
     {
+        if (GameManager.instance.GetIsGamePaused())
+            return;
         if (vcam.Follow)
         {
             if(stage == CinemachineCore.Stage.Aim)

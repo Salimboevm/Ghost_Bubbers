@@ -1,6 +1,8 @@
 Base path: 'F:/Unity/Installs/2021.1.19f1/Editor/Data', plugins path 'F:/Unity/Installs/2021.1.19f1/Editor/Data/PlaybackEngines'
+<<<<<<< HEAD
 Cmd: initializeCompiler
 
+=======
+>>>>>>> parent of 7654dd3 (pause menu)
 Cmd: initializeCompiler
 
-Cmd: shutdown

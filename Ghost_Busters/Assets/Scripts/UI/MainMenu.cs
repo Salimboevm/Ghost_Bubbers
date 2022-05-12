@@ -30,6 +30,9 @@ public class MainMenu : MonoBehaviour
     /// </summary>
     public void ButtonPlay()
     {
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+
         _audioManager.StopMusic("MainMenu");
         _audioManager.PlayMusic("Gameplay");
 

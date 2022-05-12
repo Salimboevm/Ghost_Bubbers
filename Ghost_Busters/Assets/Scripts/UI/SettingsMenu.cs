@@ -56,50 +56,53 @@ public class SettingsMenu : MonoBehaviour
         //We add every resolution width and height into the string list and also once, we find the correct resolution we assign it to turn on
         for (int i = 0; i < _resolutions.Length; i++)
         {
-            string option = _resolutions[i].width + " x " + _resolutions[i].height;
-            options.Add(option);
-
-            #region If we have previously saved settings
-            if (PlayerPrefs.GetString("settings") != "")
+            if (i < _resolutions.Length - 1 && _resolutions[i].width != _resolutions[i + 1].width && _resolutions[i].height != _resolutions[i + 1].height) // Making Sure we don't assign 2 resolutions twice
             {
-                #region Load in the Saved Settings
-                //We load in the settings
-                string jsonString = PlayerPrefs.GetString("settings");
-                SaveSettingsObject saveSettings = JsonUtility.FromJson<SaveSettingsObject>(jsonString);
-                #endregion
+                string option = _resolutions[i].width + " x " + _resolutions[i].height;
+                options.Add(option);
 
-                #region Set the correct resolution
-                if (_resolutions[i].width == saveSettings.resolutionWidth && _resolutions[i].height == saveSettings.resolutionHeight)
+                #region If we have previously saved settings
+                if (PlayerPrefs.GetString("settings") != "")
+                {
+                    #region Load in the Saved Settings
+                    //We load in the settings
+                    string jsonString = PlayerPrefs.GetString("settings");
+                    SaveSettingsObject saveSettings = JsonUtility.FromJson<SaveSettingsObject>(jsonString);
+                    #endregion
+
+                    #region Set the correct resolution
+                    if (_resolutions[i].width == saveSettings.resolutionWidth && _resolutions[i].height == saveSettings.resolutionHeight)
+                    {
+                        currentResolutionIndex = i;
+                    }
+                    #endregion
+
+                    #region Set Audio-Settings
+                    //Set the Audio Settings and their Visuals
+                    _audioSliders[0].value = saveSettings.masterVolume;
+                    SetMasterVolume();
+
+                    _audioSliders[2].value = saveSettings.musicVolume;
+                    SetMusicVolume();
+
+                    _audioSliders[1].value = saveSettings.sfxVolume;
+                    SetSFXVolume();
+                    #endregion
+
+                    #region Set FullScreen
+                    //set Fullscreen
+                    _fullscreen.isOn = saveSettings.fullscreen;
+                    SetFullscreen();
+                    #endregion
+                }
+                #endregion
+                #region If we have unsaved settings
+                else if (_resolutions[i].width == Screen.currentResolution.width && _resolutions[i].height == Screen.currentResolution.height)
                 {
                     currentResolutionIndex = i;
                 }
-                #endregion
-
-                #region Set Audio-Settings
-                //Set the Audio Settings and their Visuals
-                _audioSliders[0].value = saveSettings.masterVolume;
-                SetMasterVolume();
-
-                _audioSliders[2].value = saveSettings.musicVolume;
-                SetMusicVolume();
-
-                _audioSliders[1].value = saveSettings.sfxVolume;
-                SetSFXVolume();
-                #endregion
-
-                #region Set FullScreen
-                //set Fullscreen
-                _fullscreen.isOn = saveSettings.fullscreen;
-                SetFullscreen(); 
-                #endregion
+                #endregion 
             }
-            #endregion
-            #region If we have unsaved settings
-            else if (_resolutions[i].width == Screen.currentResolution.width && _resolutions[i].height == Screen.currentResolution.height)
-            {
-                currentResolutionIndex = i;
-            } 
-            #endregion
         }
         #endregion
 

@@ -75,7 +75,7 @@ public class AudioManager : MonoBehaviour
         s._source.Play();
 
 
-        Debug.Log("Song '" + name + "' is played now");
+        //Debug.Log("Song '" + name + "' is played now");
     }
 
     /// <summary>
@@ -90,7 +90,7 @@ public class AudioManager : MonoBehaviour
 
         s._source.Stop();
 
-        Debug.Log("Song '" + name + "' is stopped now");
+        //Debug.Log("Song '" + name + "' is stopped now");
     }
 
     /// <summary>
@@ -105,7 +105,7 @@ public class AudioManager : MonoBehaviour
 
         s._source.PlayOneShot(s._source.clip);
 
-        Debug.Log("Sound '" + name + "' was played now");
+        //Debug.Log("Sound '" + name + "' was played now");
     } 
 
     /// <summary>
